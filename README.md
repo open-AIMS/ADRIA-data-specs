@@ -35,7 +35,7 @@ Pertinent part of the datapackage spec is shown below (with comments):
 "name": "Example_domain",
   "title": "Example reef cluster data package",
   "description": "Example data package for ADRIA",
-  "version": "v0.2.1",                             # Used to ensure compatibility with current ADRIA version 
+  "version": "v0.2.1",                             // Used to ensure compatibility with current ADRIA version 
   "sources": [],
   "simulation_metadata": {
     "timeframe": [2026, 2099]

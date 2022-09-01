@@ -1,5 +1,12 @@
 Example ADRIA data package specifications
 
+- Example_domain : see "Input Set" section
+- Example_domain_RCPs45_2022-09 ... : see "Result Set" section
+- example_scenarios.csv : See "Scenario file" section
+- example_model_spec.csv : See "Model details" section
+- README.md : this file
+
+
 
 # Input Set
 
@@ -80,7 +87,10 @@ threshold = 1e-6  # Result values below this will be set to 0.0 (saves space for
 output_dir = "./outputs"  # save to current working directory
 ```
 
-# Example programmatic workflows
+# Example programmatic workflow
+
+
+## Usage
 
 ```julia
 using ADRIA
@@ -139,4 +149,50 @@ timeframe : 2026 - 2099
 TAC = ADRIA.metrics.total_absolute_cover(rs)
 RSV = ADRIA.metrics.relative_shelter_volume(rs)
 # ... etc ...
+```
+
+## Model details
+
+```julia
+@info "Load data package"
+RCP_scenario = "45"
+path_to_input_set = "some location"
+dom = ADRIA.load_domain(path_to_input_set, RCP_scenario)
+
+# Get default parameter table (fieldnames and their values)
+param_df = ADRIA.param_table(dom)
+
+# Get model specification with lower/upper bounds separated
+model_spec = ADRIA.model_spec(dom)
+
+# Export model specification to CSV
+ADRIA.model_spec(dom, "example_model_spec.csv")
+
+# Get parameter details
+
+## Parameter names
+p_names = dom.model[:fieldname]
+
+## Current values
+p_vals = dom.model[:val]
+
+## ADRIA parameter types
+p_types = dom.model[:ptype]
+
+## Parameter bounds (for e.g., to pass into a sampler or optimizer)
+## Note: ADRIA integer parameter bounds are set such that ℓ ≤ x ≤ u+1,
+## where ℓ is the lower bound and u is the upper bound.
+## This is because `floor(x)` is assigned with `update_params!()`.
+## Instances where ℓ := x := u indicate uncertain parameters that 
+## are nevertheless assumed to be constant.
+p_bounds = dom.model[:bounds]
+
+## Component groups
+p_groups = dom.model[:component]
+
+## All of above as a DataFrame
+model_spec = DataFrame(dom.model)
+
+# Get DataFrame of parameter information for a specific sub-component (Intervention, Criteria, Coral)
+ADRIA.component_params(dom.model, Intervention)
 ```

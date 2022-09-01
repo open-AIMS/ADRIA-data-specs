@@ -28,6 +28,21 @@ as indicated by the files found in their respective folders. For example, DHW da
 In the future, this can be changed to retrieve file name/locations/format, etc from the `datapackage.json` file instead
 (and may point to an S3 or other data store).
 
+
+Pertinent part of the datapackage spec is shown below (with comments):
+
+```json
+"name": "Example_domain",
+  "title": "Example reef cluster data package",
+  "description": "Example data package for ADRIA",
+  "version": "v0.2.1",                             # Used to ensure compatibility with current ADRIA version 
+  "sources": [],
+  "simulation_metadata": {
+    "timeframe": [2026, 2099]
+  }
+```
+
+
 # Result Set
 
 ```

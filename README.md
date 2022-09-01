@@ -65,7 +65,7 @@ where the datetime indicates when the time at which the ResultSets were combined
 example_scenarios.csv
 ```
 
-CSV file defining a set of scenarios to run (see example further below)
+CSV file defining a set of scenarios to run (see example use further below)
 
 # ADRIA configuration file
 
@@ -91,21 +91,21 @@ ADRIA.setup()
 @info "Load data package"
 RCP_scenario = "45"
 path_to_input_set = "some location"
-ex_domain = ADRIA.load_domain(path_to_input_set, RCP_scenario)
+dom = ADRIA.load_domain(path_to_input_set, RCP_scenario)
 
 @info "Load example scenarios to run"
-p_df = ADRIA.load_scenarios(ex_domain, "example_scenarios.csv")
+p_df = ADRIA.load_scenarios(dom, "example_scenarios.csv")
 
 # Batch run scenarios. Returns an updated domain object with the 
 # run ID/result set location used to gather results later.
 @info "Set up and run scenarios"
-ex_domain = ADRIA.run_scenarios(p_df, ex_domain)
+dom = ADRIA.run_scenarios(p_df, dom)
 
 # Can also run a single scenario directly, but not shown in its entirety here.
 # result = ADRIA.run_scenario(param_df::DataFrameRow, domain::Domain)
 
 @info "Load ResultSet for analyses"
-rs = ADRIA.load_results(ex_domain)
+rs = ADRIA.load_results(dom)
 ```
 
 

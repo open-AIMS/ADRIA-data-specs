@@ -69,7 +69,7 @@ CSV file defining a set of scenarios to run (see example use further below)
 
 # ADRIA configuration file
 
-Model configuration can be defined in a `.toml` file
+Operational configuration can be defined in a `.toml` file
 
 ```toml
 [operation]

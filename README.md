@@ -1,6 +1,6 @@
 Example ADRIA data package specifications
 
-- Example_domain : see "Input Set" section
+- Example_domain : see "Domain" section
 - Example_domain_RCPs45_2022-09 ... : see "Result Set" section
 - example_scenarios.csv : See "Scenario file" section
 - example_model_spec.csv : See "Model details" section
@@ -12,7 +12,10 @@ The specification outlined here is used to ensure consistency in filenames, loca
 See [here](https://specs.frictionlessdata.io/data-package/) for an overview of what a `data package` is.
 
 
-# Input Set
+# Domain
+
+The `Domain` data package contains the necessary data/information to run simulations with
+ADRIA.
 
 ```
 Example_domain    # Unique name for Input Set / study domain
@@ -118,7 +121,7 @@ using ADRIA
 # Load and apply configuration options (the toml file)
 ADRIA.setup()
 
-@info "Load data package"
+@info "Load a domain"
 RCP_scenario = "45"
 path_to_input_set = "some location"
 dom = ADRIA.load_domain(path_to_input_set, RCP_scenario)
@@ -174,7 +177,7 @@ RSV = ADRIA.metrics.relative_shelter_volume(rs)
 ## Model details
 
 ```julia
-@info "Load data package"
+@info "Load domain"
 RCP_scenario = "45"
 path_to_input_set = "some location"
 dom = ADRIA.load_domain(path_to_input_set, RCP_scenario)

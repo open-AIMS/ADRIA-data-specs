@@ -6,28 +6,33 @@ Example ADRIA data package specifications
 - example_model_spec.csv : See "Model details" section
 - README.md : this file
 
+Data packages are a simple, flexible, container format for collections of data.
+The specification outlined here is used to ensure consistency in filenames, locations, and formats.
+
+See [here](https://specs.frictionlessdata.io/data-package/) for an overview of what a `data package` is.
 
 
 # Input Set
 
 ```
 Example_domain    # Unique name for Input Set / study domain
-├───connectivity  # (Sub)-directories holding CSVs of connectivity data (grouped by year)
+├───connectivity  # (Sub-)directories holding CSVs of connectivity data (grouped by year)
 │   └───2000
-├───DHWs          # Files holding DHW data (one for each RCP/SSP scenario)
-├───site_data     # Spatial data (currently a geopackage and .MAT file holding initial coral covers)
-└───waves         # Files holding wave stress data
+├───DHWs          # netCDF-based data cubes holding DHW data (one for each RCP/SSP scenario)
+├───site_data     # Spatial data (currently a geopackage defining sites and a netCDF holding initial coral covers)
+└───waves         # netCDF holding wave stress data
 datapackage.json
 README.md
 ```
 
 With the exception of connectivity data, all filenames are expected to follow the same naming conventions
 as indicated by the files found in their respective folders. For example, DHW data are expected to follow
-`dhwRCP[RCP scenario ID].mat`, geopackage file must have the same name as the domain, etc.
+`dhwRCP[RCP scenario ID].nc` (e.g., `dhwRCP45.nc`), geopackage file must have the same name as the domain, etc.
 
-In the future, this can be changed to retrieve file name/locations/format, etc from the `datapackage.json` file instead
-(and may point to an S3 or other data store).
-
+A future improvement is to store relevant metadata mapping filenames to their locations within the
+data package, their dimensions and format, and other ancillary information in the `datapackage.json`
+file instead. Locations of external data (e.g., an S3 bucket or other cloud-based store) could
+then also be specified (and loaded from those locations).
 
 Pertinent part of the datapackage spec is shown below (with comments):
 
@@ -38,7 +43,7 @@ Pertinent part of the datapackage spec is shown below (with comments):
   "version": "v0.2.1",                             // Used to ensure compatibility with current ADRIA version 
   "sources": [],
   "simulation_metadata": {
-    "timeframe": [2026, 2099]
+    "timeframe": [2025, 2099]
   }
 ```
 

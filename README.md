@@ -1,4 +1,4 @@
-Example ADRIA data package specifications
+# Example ADRIA data package specifications
 
 - Example_domain : see "Domain" section
 - Example_domain_RCPs45_2022-09 ... : see "Result Set" section
@@ -21,6 +21,7 @@ ADRIA.
 Example_domain    # Unique name for Input Set / study domain
 ├───connectivity  # (Sub-)directories holding CSVs of connectivity data (grouped by year)
 │   └───2000
+├───cyclones      # data cube as netCDF holding cyclone mortality data
 ├───DHWs          # netCDF-based data cubes holding DHW data (one for each RCP/SSP scenario)
 ├───site_data     # Spatial data (currently a geopackage defining sites and a netCDF holding initial coral covers)
 └───waves         # netCDF holding wave stress data
@@ -28,9 +29,31 @@ datapackage.json
 README.md
 ```
 
-With the exception of connectivity data, all filenames are expected to follow the same naming conventions
-as indicated by the files found in their respective folders. For example, DHW data are expected to follow
-`dhwRCP[RCP scenario ID].nc` (e.g., `dhwRCP45.nc`), geopackage file must have the same name as the domain, etc.
+Dimensions of each data cube should follow the order of:
+
+- timesteps
+- locations
+- species
+- scenarios
+
+Where a dimension is not relevant to a data cube, it should be removed.
+For example, where `species` is not a relevant dimension, the data cube should follow the
+order of:
+
+- timesteps
+- locations
+- scenarios
+
+With the exception of connectivity data, all filenames are expected to follow the same
+naming conventions as indicated by the files found in their respective folders. For example,
+DHW data are expected to follow `dhwRCP[RCP scenario ID].nc` (e.g., `dhwRCP45.nc`),
+geopackage file must have the same name as the domain, etc.
+
+Connectivity data is represented as a transference probabilty matrix and is currently
+expected in CSV format, with source locations indicated by ROWS and sink locations indicated
+by COLUMNS. Each CSV file represents a given day of a year, with each sub-directory
+indicating the year. Due to the evolving data pipeline, the filenames are not expected to
+follow a specific convention.
 
 A future improvement is to store relevant metadata mapping filenames to their locations within the
 data package, their dimensions and format, and other ancillary information in the `datapackage.json`
@@ -43,7 +66,7 @@ Pertinent part of the datapackage spec is shown below (with comments):
 "name": "Example_domain",
   "title": "Example reef cluster data package",
   "description": "Example data package for ADRIA",
-  "version": "v0.2.1",                             // Used to ensure compatibility with current ADRIA version 
+  "version": "v0.2.1",                             // Used to ensure compatibility with current ADRIA version
   "sources": [],
   "simulation_metadata": {
     "timeframe": [2025, 2099]
@@ -52,6 +75,12 @@ Pertinent part of the datapackage spec is shown below (with comments):
 
 
 # Result Set
+
+The Result Set is a data package containing the results/outcomes from a set of simulations
+and all metadata necessary to perform analyses. The Result Set does not currently follow the
+standard Frictionless data package standard (missing the `datapackage.json`` and readme file)
+but should be made to do so eventually. All data, with the exception of geospatial data and
+model specifications, are stored in Zarr format.
 
 ```
 Example_domain__RCPs45__2022-09-01_17_05_28_067
@@ -68,14 +97,12 @@ Example_domain__RCPs45__2022-09-01_17_05_28_067
 └───site_data                     # Copy of geopackage representing study area/domain
 ```
 
-Result Set is not currently defined as a datapackage (but it should be, eventually).
-All data, with the exception of spatial data, are stored in Zarr format.
 
-ADRIA now only stores outcomes for each metric to reduce storage size.
+ADRIA only stores outcomes for each metric to reduce storage size.
 
 Result Set directory name follows the convention of:
 
-`[Input Set name]__RCPs[RCPs represented]__[Datetime of run]`
+`[Result Set name]__RCPs[RCPs represented]__[Datetime of run]`
 
 Note that each element are separated by double underscores (__).
 
@@ -129,7 +156,7 @@ dom = ADRIA.load_domain(path_to_input_set, RCP_scenario)
 @info "Load example scenarios to run"
 p_df = ADRIA.load_scenarios(dom, "example_scenarios.csv")
 
-# Batch run scenarios. Returns an updated domain object with the 
+# Batch run scenarios. Returns an updated domain object with the
 # run ID/result set location used to gather results later.
 @info "Set up and run scenarios"
 dom = ADRIA.run_scenarios(p_df, dom)
@@ -209,7 +236,7 @@ p_types = dom.model[:ptype]
 ## Note: ADRIA integer parameter bounds are set such that ℓ ≤ x ≤ u+1,
 ## where ℓ is the lower bound and u is the upper bound.
 ## This is because `floor(x)` is assigned with `update_params!()`.
-## Instances where ℓ := x := u indicate uncertain parameters that 
+## Instances where ℓ := x := u indicate uncertain parameters that
 ## are nevertheless assumed to be constant.
 p_bounds = dom.model[:bounds]
 

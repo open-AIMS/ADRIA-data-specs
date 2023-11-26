@@ -1,244 +1,257 @@
-# Generated with ADRIA.jl v0.4.1 on 2022-09-01_17_59_45_950
-component,fieldname,val,ptype,dists,lower_bound,upper_bound,full_bounds,is_constant
-EnvironmentalLayer,dhw_scenario,50,integer,unif,1,51,"(1, 51)",false
-EnvironmentalLayer,wave_scenario,1,integer,unif,1,51,"(1, 51)",false
-Intervention,guided,2,integer,unif,0,4,"(0, 4)",false
-Intervention,seed_TA,500000,integer,unif,0,500001,"(0, 500001)",false
-Intervention,seed_CA,500000,integer,unif,0,500001,"(0, 500001)",false
-Intervention,fogging,0.0,real,triang,0.0,0.3,"(0.0, 0.3, 0.5333333333333333)",false
-Intervention,SRM,0.0,real,triang,0.0,7.0,"(0.0, 7.0, 0.0)",false
-Intervention,a_adapt,10.0,real,triang,0.0,8.0,"(0.0, 8.0, 0.0)",false
-Intervention,n_adapt,0.0,real,unif,0.0,0.05,"(0.0, 0.05)",false
-Intervention,seed_years,10,integer,triang,5,16,"(5, 16, 0.3333333333333333)",false
-Intervention,shade_years,10,integer,triang,5,75,"(5, 75, 0.06756756756756757)",false
-Intervention,seed_freq,5,integer,unif,0,6,"(0, 6)",false
-Intervention,shade_freq,1,integer,unif,0,6,"(0, 6)",false
-Intervention,seed_year_start,10,integer,unif,2,26,"(2, 26)",false
-Intervention,shade_year_start,2,integer,unif,2,26,"(2, 26)",false
-Criteria,wave_stress,1.0,real,unif,0.0,1.0,"(0.0, 1.0)",false
-Criteria,heat_stress,1.0,real,unif,0.0,1.0,"(0.0, 1.0)",false
-Criteria,shade_connectivity,0.0,real,unif,0.0,1.0,"(0.0, 1.0)",false
-Criteria,seed_connectivity,1.0,real,unif,0.0,1.0,"(0.0, 1.0)",false
-Criteria,coral_cover_high,0.0,real,unif,0.0,1.0,"(0.0, 1.0)",false
-Criteria,coral_cover_low,1.0,real,unif,0.0,1.0,"(0.0, 1.0)",false
-Criteria,seed_priority,1.0,real,unif,0.0,1.0,"(0.0, 1.0)",false
-Criteria,shade_priority,0.0,real,unif,0.0,1.0,"(0.0, 1.0)",false
-Criteria,deployed_coral_risk_tol,1.0,real,unif,0.0,1.0,"(0.0, 1.0)",false
-Criteria,depth_min,3.0,real,unif,3.0,5.0,"(3.0, 5.0)",false
-Criteria,depth_offset,8.0,real,unif,5.0,6.0,"(5.0, 6.0)",false
-Coral,tabular_acropora_unenhanced_6_2_colony_area_cm2,44.178646691106465,real,triang,39.76078202199582,48.596511360217114,"(39.76078202199582, 48.596511360217114, 0.5)",false
-Coral,tabular_acropora_enhanced_5_1_wavemort90,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,large_massives_4_6_growth_rate,2.083333333333333e-5,real,triang,1.875e-5,2.2916666666666664e-5,"(1.875e-5, 2.2916666666666664e-5, 0.5)",false
-Coral,corymbose_acropora_unenhanced_6_4_mb_rate,0.03,real,triang,0.027,0.033,"(0.027, 0.033, 0.5)",false
-Coral,corymbose_acropora_unenhanced_1_4_growth_rate,0.00017600000000000002,real,triang,0.00015840000000000003,0.00019360000000000004,"(0.00015840000000000003, 0.00019360000000000004, 0.5)",false
-Coral,corymbose_acropora_unenhanced_3_4_growth_rate,0.00011999999999999999,real,triang,0.000108,0.000132,"(0.000108, 0.000132, 0.5)",false
-Coral,tabular_acropora_unenhanced_4_2_fecundity,60690.25649057995,real,triang,54621.23084152196,66759.28213963796,"(54621.23084152196, 66759.28213963796, 0.5)",false
-Coral,corymbose_acropora_enhanced_4_3_growth_rate,0.00023999999999999998,real,triang,0.000216,0.000264,"(0.000216, 0.000264, 0.5)",false
-Coral,corymbose_acropora_unenhanced_2_4_growth_rate,0.00017600000000000002,real,triang,0.00015840000000000003,0.00019360000000000004,"(0.00015840000000000003, 0.00019360000000000004, 0.5)",false
-Coral,small_massives_2_5_fecundity,174097.86326204485,real,triang,156688.07693584036,191507.64958824936,"(156688.07693584036, 191507.64958824936, 0.5)",false
-Coral,corymbose_acropora_unenhanced_6_4_fecundity,70051.98698712433,real,triang,63046.788288411895,77057.18568583677,"(63046.788288411895, 77057.18568583677, 0.5)",false
-Coral,small_massives_6_5_growth_rate,2.4e-5,real,triang,2.16e-5,2.64e-5,"(2.16e-5, 2.64e-5, 0.5)",false
-Coral,tabular_acropora_unenhanced_4_2_growth_rate,0.00045918367346938784,real,triang,0.00041326530612244907,0.0005051020408163267,"(0.00041326530612244907, 0.0005051020408163267, 0.5)",false
-Coral,tabular_acropora_enhanced_3_1_colony_area_cm2,9.62112750161874,real,triang,8.659014751456867,10.583240251780616,"(8.659014751456867, 10.583240251780616, 0.5)",false
-Coral,tabular_acropora_enhanced_4_1_fecundity,53544.16724131383,real,triang,48189.750517182445,58898.583965445214,"(48189.750517182445, 58898.583965445214, 0.5)",false
-Coral,small_massives_2_5_mb_rate,0.098,real,triang,0.0882,0.1078,"(0.0882, 0.1078, 0.5)",false
-Coral,small_massives_3_5_wavemort90,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,small_massives_1_5_growth_rate,8.800000000000001e-5,real,triang,7.920000000000001e-5,9.680000000000002e-5,"(7.920000000000001e-5, 9.680000000000002e-5, 0.5)",false
-Coral,tabular_acropora_enhanced_5_1_fecundity,22462.70892642643,real,triang,20216.438033783787,24708.979819069074,"(20216.438033783787, 24708.979819069074, 0.5)",false
-Coral,corymbose_acropora_enhanced_5_3_growth_rate,8.0e-5,real,triang,7.2e-5,8.800000000000001e-5,"(7.2e-5, 8.800000000000001e-5, 0.5)",false
-Coral,corymbose_acropora_enhanced_6_3_fecundity,52358.580056543695,real,triang,47122.72205088933,57594.43806219807,"(47122.72205088933, 57594.43806219807, 0.5)",false
-Coral,corymbose_acropora_unenhanced_5_4_wavemort90,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,corymbose_acropora_enhanced_2_3_growth_rate,0.00023999999999999998,real,triang,0.000216,0.000264,"(0.000216, 0.000264, 0.5)",false
-Coral,tabular_acropora_unenhanced_2_2_mb_rate,0.19,real,triang,0.171,0.20900000000000002,"(0.171, 0.20900000000000002, 0.5)",false
-Coral,tabular_acropora_unenhanced_3_2_bleach_resist,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,small_massives_3_5_fecundity,75235.75680665726,real,triang,67712.18112599153,82759.33248732299,"(67712.18112599153, 82759.33248732299, 0.5)",false
-Coral,tabular_acropora_enhanced_2_1_bleach_resist,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,tabular_acropora_enhanced_6_1_bleach_resist,1.0,real,triang,0.9,1.1,"(0.9, 1.1, 0.5)",false
-Coral,small_massives_2_5_wavemort90,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,large_massives_4_6_fecundity,80635.68757920948,real,triang,72572.11882128853,88699.25633713043,"(72572.11882128853, 88699.25633713043, 0.5)",false
-Coral,corymbose_acropora_unenhanced_6_4_colony_area_cm2,706.8583470577034,real,triang,636.1725123519332,777.5441817634738,"(636.1725123519332, 777.5441817634738, 0.5)",false
-Coral,large_massives_1_6_bleach_resist,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,tabular_acropora_unenhanced_5_2_wavemort90,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,corymbose_acropora_enhanced_4_3_fecundity,65496.53046804566,real,triang,58946.87742124109,72046.18351485023,"(58946.87742124109, 72046.18351485023, 0.5)",false
-Coral,small_massives_5_5_growth_rate,1.6e-5,real,triang,1.44e-5,1.76e-5,"(1.44e-5, 1.76e-5, 0.5)",false
-Coral,corymbose_acropora_unenhanced_4_4_bleach_resist,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,corymbose_acropora_enhanced_5_3_colony_area_cm2,176.71458676442586,real,triang,159.0431280879833,194.38604544086846,"(159.0431280879833, 194.38604544086846, 0.5)",false
-Coral,tabular_acropora_unenhanced_6_2_wavemort90,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,tabular_acropora_enhanced_6_1_wavemort90,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,corymbose_acropora_enhanced_6_3_bleach_resist,1.0,real,triang,0.9,1.1,"(0.9, 1.1, 0.5)",false
-Coral,small_massives_2_5_colony_area_cm2,2827.4333882308138,real,triang,2544.6900494077327,3110.1767270538953,"(2544.6900494077327, 3110.1767270538953, 0.5)",false
-Coral,small_massives_4_5_colony_area_cm2,2827.4333882308138,real,triang,2544.6900494077327,3110.1767270538953,"(2544.6900494077327, 3110.1767270538953, 0.5)",false
-Coral,tabular_acropora_unenhanced_6_2_bleach_resist,1.0,real,triang,0.9,1.1,"(0.9, 1.1, 0.5)",false
-Coral,small_massives_3_5_colony_area_cm2,2827.4333882308138,real,triang,2544.6900494077327,3110.1767270538953,"(2544.6900494077327, 3110.1767270538953, 0.5)",false
-Coral,large_massives_3_6_fecundity,80635.68757920948,real,triang,72572.11882128853,88699.25633713043,"(72572.11882128853, 88699.25633713043, 0.5)",false
-Coral,tabular_acropora_enhanced_1_1_growth_rate,0.0006125,real,triang,0.00055125,0.0006737500000000001,"(0.00055125, 0.0006737500000000001, 0.5)",false
-Coral,tabular_acropora_enhanced_1_1_fecundity,25918.241865444536,real,triang,23326.41767890008,28510.06605198899,"(23326.41767890008, 28510.06605198899, 0.5)",false
-Coral,tabular_acropora_unenhanced_1_2_fecundity,52273.74839262087,real,triang,47046.37355335879,57501.123231882964,"(47046.37355335879, 57501.123231882964, 0.5)",false
-Coral,large_massives_6_6_growth_rate,8.333333333333334e-6,real,triang,7.5e-6,9.166666666666668e-6,"(7.5e-6, 9.166666666666668e-6, 0.5)",false
-Coral,tabular_acropora_enhanced_3_1_growth_rate,0.0006125,real,triang,0.00055125,0.0006737500000000001,"(0.00055125, 0.0006737500000000001, 0.5)",false
-Coral,tabular_acropora_enhanced_1_1_wavemort90,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,corymbose_acropora_unenhanced_4_4_wavemort90,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,tabular_acropora_unenhanced_3_2_colony_area_cm2,44.178646691106465,real,triang,39.76078202199582,48.596511360217114,"(39.76078202199582, 48.596511360217114, 0.5)",false
-Coral,corymbose_acropora_unenhanced_1_4_fecundity,118090.95735034144,real,triang,106281.8616153073,129900.05308537559,"(106281.8616153073, 129900.05308537559, 0.5)",false
-Coral,tabular_acropora_enhanced_5_1_bleach_resist,1.5,real,triang,1.35,1.6500000000000001,"(1.35, 1.6500000000000001, 0.5)",false
-Coral,tabular_acropora_enhanced_2_1_wavemort90,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,corymbose_acropora_enhanced_1_3_colony_area_cm2,176.71458676442586,real,triang,159.0431280879833,194.38604544086846,"(159.0431280879833, 194.38604544086846, 0.5)",false
-Coral,corymbose_acropora_unenhanced_3_4_wavemort90,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,tabular_acropora_enhanced_1_1_colony_area_cm2,9.62112750161874,real,triang,8.659014751456867,10.583240251780616,"(8.659014751456867, 10.583240251780616, 0.5)",false
-Coral,tabular_acropora_unenhanced_5_2_colony_area_cm2,44.178646691106465,real,triang,39.76078202199582,48.596511360217114,"(39.76078202199582, 48.596511360217114, 0.5)",false
-Coral,tabular_acropora_enhanced_3_1_mb_rate,0.2,real,triang,0.18000000000000002,0.22000000000000003,"(0.18000000000000002, 0.22000000000000003, 0.5)",false
-Coral,corymbose_acropora_enhanced_1_3_fecundity,80101.35188695589,real,triang,72091.21669826031,88111.48707565149,"(72091.21669826031, 88111.48707565149, 0.5)",false
-Coral,corymbose_acropora_unenhanced_2_4_colony_area_cm2,706.8583470577034,real,triang,636.1725123519332,777.5441817634738,"(636.1725123519332, 777.5441817634738, 0.5)",false
-Coral,tabular_acropora_enhanced_4_1_mb_rate,0.2,real,triang,0.18000000000000002,0.22000000000000003,"(0.18000000000000002, 0.22000000000000003, 0.5)",false
-Coral,tabular_acropora_unenhanced_2_2_bleach_resist,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,tabular_acropora_enhanced_2_1_fecundity,25918.241865444536,real,triang,23326.41767890008,28510.06605198899,"(23326.41767890008, 28510.06605198899, 0.5)",false
-Coral,large_massives_2_6_mb_rate,0.098,real,triang,0.0882,0.1078,"(0.0882, 0.1078, 0.5)",false
-Coral,corymbose_acropora_unenhanced_6_4_growth_rate,4.0e-5,real,triang,3.6e-5,4.4000000000000006e-5,"(3.6e-5, 4.4000000000000006e-5, 0.5)",false
-Coral,large_massives_5_6_growth_rate,5.555555555555555e-6,real,triang,4.9999999999999996e-6,6.111111111111111e-6,"(4.9999999999999996e-6, 6.111111111111111e-6, 0.5)",false
-Coral,corymbose_acropora_enhanced_3_3_fecundity,65496.53046804566,real,triang,58946.87742124109,72046.18351485023,"(58946.87742124109, 72046.18351485023, 0.5)",false
-Coral,large_massives_5_6_bleach_resist,1.5,real,triang,1.35,1.6500000000000001,"(1.35, 1.6500000000000001, 0.5)",false
-Coral,tabular_acropora_unenhanced_6_2_growth_rate,0.0001530612244897959,real,triang,0.00013775510204081632,0.00016836734693877553,"(0.00013775510204081632, 0.00016836734693877553, 0.5)",false
-Coral,large_massives_3_6_wavemort90,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,tabular_acropora_unenhanced_4_2_bleach_resist,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,tabular_acropora_enhanced_3_1_wavemort90,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,tabular_acropora_enhanced_4_1_growth_rate,0.0006125,real,triang,0.00055125,0.0006737500000000001,"(0.00055125, 0.0006737500000000001, 0.5)",false
-Coral,small_massives_5_5_colony_area_cm2,2827.4333882308138,real,triang,2544.6900494077327,3110.1767270538953,"(2544.6900494077327, 3110.1767270538953, 0.5)",false
-Coral,corymbose_acropora_enhanced_2_3_fecundity,80101.35188695589,real,triang,72091.21669826031,88111.48707565149,"(72091.21669826031, 88111.48707565149, 0.5)",false
-Coral,tabular_acropora_enhanced_4_1_colony_area_cm2,9.62112750161874,real,triang,8.659014751456867,10.583240251780616,"(8.659014751456867, 10.583240251780616, 0.5)",false
-Coral,large_massives_1_6_wavemort90,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,corymbose_acropora_enhanced_1_3_mb_rate,0.15,real,triang,0.135,0.165,"(0.135, 0.165, 0.5)",false
-Coral,large_massives_1_6_mb_rate,0.098,real,triang,0.0882,0.1078,"(0.0882, 0.1078, 0.5)",false
-Coral,corymbose_acropora_enhanced_1_3_wavemort90,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,corymbose_acropora_unenhanced_6_4_bleach_resist,1.0,real,triang,0.9,1.1,"(0.9, 1.1, 0.5)",false
-Coral,large_massives_3_6_bleach_resist,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,corymbose_acropora_enhanced_2_3_bleach_resist,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,tabular_acropora_enhanced_3_1_fecundity,53544.16724131383,real,triang,48189.750517182445,58898.583965445214,"(48189.750517182445, 58898.583965445214, 0.5)",false
-Coral,small_massives_6_5_colony_area_cm2,2827.4333882308138,real,triang,2544.6900494077327,3110.1767270538953,"(2544.6900494077327, 3110.1767270538953, 0.5)",false
-Coral,large_massives_2_6_growth_rate,3.055555555555556e-5,real,triang,2.7500000000000004e-5,3.3611111111111116e-5,"(2.7500000000000004e-5, 3.3611111111111116e-5, 0.5)",false
-Coral,corymbose_acropora_enhanced_2_3_colony_area_cm2,176.71458676442586,real,triang,159.0431280879833,194.38604544086846,"(159.0431280879833, 194.38604544086846, 0.5)",false
-Coral,small_massives_3_5_growth_rate,5.9999999999999995e-5,real,triang,5.4e-5,6.6e-5,"(5.4e-5, 6.6e-5, 0.5)",false
-Coral,tabular_acropora_unenhanced_3_2_wavemort90,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,tabular_acropora_enhanced_6_1_colony_area_cm2,9.62112750161874,real,triang,8.659014751456867,10.583240251780616,"(8.659014751456867, 10.583240251780616, 0.5)",false
-Coral,corymbose_acropora_enhanced_2_3_mb_rate,0.15,real,triang,0.135,0.165,"(0.135, 0.165, 0.5)",false
-Coral,corymbose_acropora_unenhanced_3_4_bleach_resist,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,corymbose_acropora_unenhanced_1_4_colony_area_cm2,706.8583470577034,real,triang,636.1725123519332,777.5441817634738,"(636.1725123519332, 777.5441817634738, 0.5)",false
-Coral,tabular_acropora_unenhanced_2_2_wavemort90,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,tabular_acropora_enhanced_4_1_bleach_resist,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,small_massives_1_5_colony_area_cm2,2827.4333882308138,real,triang,2544.6900494077327,3110.1767270538953,"(2544.6900494077327, 3110.1767270538953, 0.5)",false
-Coral,corymbose_acropora_enhanced_1_3_bleach_resist,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,corymbose_acropora_enhanced_2_3_wavemort90,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,large_massives_3_6_colony_area_cm2,7853.981633974483,real,triang,7068.583470577035,8639.379797371932,"(7068.583470577035, 8639.379797371932, 0.5)",false
-Coral,corymbose_acropora_unenhanced_5_4_fecundity,70051.98698712433,real,triang,63046.788288411895,77057.18568583677,"(63046.788288411895, 77057.18568583677, 0.5)",false
-Coral,corymbose_acropora_enhanced_6_3_growth_rate,8.0e-5,real,triang,7.2e-5,8.800000000000001e-5,"(7.2e-5, 8.800000000000001e-5, 0.5)",false
-Coral,corymbose_acropora_enhanced_3_3_colony_area_cm2,176.71458676442586,real,triang,159.0431280879833,194.38604544086846,"(159.0431280879833, 194.38604544086846, 0.5)",false
-Coral,small_massives_3_5_bleach_resist,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,tabular_acropora_unenhanced_1_2_colony_area_cm2,44.178646691106465,real,triang,39.76078202199582,48.596511360217114,"(39.76078202199582, 48.596511360217114, 0.5)",false
-Coral,tabular_acropora_enhanced_5_1_colony_area_cm2,9.62112750161874,real,triang,8.659014751456867,10.583240251780616,"(8.659014751456867, 10.583240251780616, 0.5)",false
-Coral,corymbose_acropora_unenhanced_2_4_mb_rate,0.098,real,triang,0.0882,0.1078,"(0.0882, 0.1078, 0.5)",false
-Coral,tabular_acropora_enhanced_1_1_bleach_resist,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,corymbose_acropora_unenhanced_1_4_mb_rate,0.098,real,triang,0.0882,0.1078,"(0.0882, 0.1078, 0.5)",false
-Coral,large_massives_4_6_colony_area_cm2,7853.981633974483,real,triang,7068.583470577035,8639.379797371932,"(7068.583470577035, 8639.379797371932, 0.5)",false
-Coral,corymbose_acropora_enhanced_6_3_wavemort90,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,tabular_acropora_unenhanced_5_2_fecundity,38016.37545604793,real,triang,34214.73791044314,41818.013001652726,"(34214.73791044314, 41818.013001652726, 0.5)",false
-Coral,large_massives_6_6_wavemort90,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,corymbose_acropora_enhanced_3_3_mb_rate,0.12,real,triang,0.108,0.132,"(0.108, 0.132, 0.5)",false
-Coral,small_massives_1_5_fecundity,174097.86326204485,real,triang,156688.07693584036,191507.64958824936,"(156688.07693584036, 191507.64958824936, 0.5)",false
-Coral,tabular_acropora_unenhanced_5_2_bleach_resist,1.5,real,triang,1.35,1.6500000000000001,"(1.35, 1.6500000000000001, 0.5)",false
-Coral,small_massives_3_5_mb_rate,0.088,real,triang,0.07919999999999999,0.0968,"(0.07919999999999999, 0.0968, 0.5)",false
-Coral,tabular_acropora_enhanced_5_1_growth_rate,0.0006125,real,triang,0.00055125,0.0006737500000000001,"(0.00055125, 0.0006737500000000001, 0.5)",false
-Coral,tabular_acropora_unenhanced_6_2_mb_rate,0.1,real,triang,0.09000000000000001,0.11000000000000001,"(0.09000000000000001, 0.11000000000000001, 0.5)",false
-Coral,large_massives_2_6_fecundity,256667.1206033878,real,triang,231000.408543049,282333.8326637266,"(231000.408543049, 282333.8326637266, 0.5)",false
-Coral,tabular_acropora_enhanced_2_1_growth_rate,0.0006125,real,triang,0.00055125,0.0006737500000000001,"(0.00055125, 0.0006737500000000001, 0.5)",false
-Coral,corymbose_acropora_unenhanced_3_4_colony_area_cm2,706.8583470577034,real,triang,636.1725123519332,777.5441817634738,"(636.1725123519332, 777.5441817634738, 0.5)",false
-Coral,corymbose_acropora_unenhanced_2_4_bleach_resist,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,large_massives_4_6_bleach_resist,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,small_massives_1_5_wavemort90,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,small_massives_5_5_mb_rate,0.02,real,triang,0.018000000000000002,0.022000000000000002,"(0.018000000000000002, 0.022000000000000002, 0.5)",false
-Coral,corymbose_acropora_unenhanced_5_4_colony_area_cm2,706.8583470577034,real,triang,636.1725123519332,777.5441817634738,"(636.1725123519332, 777.5441817634738, 0.5)",false
-Coral,corymbose_acropora_enhanced_5_3_wavemort90,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,tabular_acropora_unenhanced_6_2_fecundity,38016.37545604793,real,triang,34214.73791044314,41818.013001652726,"(34214.73791044314, 41818.013001652726, 0.5)",false
-Coral,large_massives_6_6_colony_area_cm2,7853.981633974483,real,triang,7068.583470577035,8639.379797371932,"(7068.583470577035, 8639.379797371932, 0.5)",false
-Coral,corymbose_acropora_unenhanced_1_4_wavemort90,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,corymbose_acropora_unenhanced_6_4_wavemort90,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,tabular_acropora_unenhanced_5_2_mb_rate,0.1,real,triang,0.09000000000000001,0.11000000000000001,"(0.09000000000000001, 0.11000000000000001, 0.5)",false
-Coral,corymbose_acropora_unenhanced_4_4_growth_rate,0.00011999999999999999,real,triang,0.000108,0.000132,"(0.000108, 0.000132, 0.5)",false
-Coral,tabular_acropora_unenhanced_1_2_mb_rate,0.19,real,triang,0.171,0.20900000000000002,"(0.171, 0.20900000000000002, 0.5)",false
-Coral,large_massives_5_6_fecundity,125396.56924359268,real,triang,112856.91231923341,137936.22616795194,"(112856.91231923341, 137936.22616795194, 0.5)",false
-Coral,tabular_acropora_enhanced_5_1_mb_rate,0.2,real,triang,0.18000000000000002,0.22000000000000003,"(0.18000000000000002, 0.22000000000000003, 0.5)",false
-Coral,corymbose_acropora_unenhanced_4_4_mb_rate,0.088,real,triang,0.07919999999999999,0.0968,"(0.07919999999999999, 0.0968, 0.5)",false
-Coral,large_massives_5_6_wavemort90,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,corymbose_acropora_unenhanced_5_4_bleach_resist,1.5,real,triang,1.35,1.6500000000000001,"(1.35, 1.6500000000000001, 0.5)",false
-Coral,tabular_acropora_unenhanced_5_2_growth_rate,0.0001530612244897959,real,triang,0.00013775510204081632,0.00016836734693877553,"(0.00013775510204081632, 0.00016836734693877553, 0.5)",false
-Coral,corymbose_acropora_enhanced_1_3_growth_rate,0.00023999999999999998,real,triang,0.000216,0.000264,"(0.000216, 0.000264, 0.5)",false
-Coral,corymbose_acropora_enhanced_4_3_mb_rate,0.12,real,triang,0.108,0.132,"(0.108, 0.132, 0.5)",false
-Coral,small_massives_2_5_bleach_resist,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,small_massives_4_5_fecundity,75235.75680665726,real,triang,67712.18112599153,82759.33248732299,"(67712.18112599153, 82759.33248732299, 0.5)",false
-Coral,tabular_acropora_enhanced_6_1_mb_rate,0.2,real,triang,0.18000000000000002,0.22000000000000003,"(0.18000000000000002, 0.22000000000000003, 0.5)",false
-Coral,corymbose_acropora_unenhanced_2_4_fecundity,118090.95735034144,real,triang,106281.8616153073,129900.05308537559,"(106281.8616153073, 129900.05308537559, 0.5)",false
-Coral,corymbose_acropora_enhanced_5_3_mb_rate,0.04,real,triang,0.036000000000000004,0.044000000000000004,"(0.036000000000000004, 0.044000000000000004, 0.5)",false
-Coral,small_massives_4_5_growth_rate,5.9999999999999995e-5,real,triang,5.4e-5,6.6e-5,"(5.4e-5, 6.6e-5, 0.5)",false
-Coral,small_massives_6_5_bleach_resist,1.0,real,triang,0.9,1.1,"(0.9, 1.1, 0.5)",false
-Coral,small_massives_5_5_fecundity,93724.48365759186,real,triang,84352.03529183268,103096.93202335105,"(84352.03529183268, 103096.93202335105, 0.5)",false
-Coral,tabular_acropora_unenhanced_4_2_colony_area_cm2,44.178646691106465,real,triang,39.76078202199582,48.596511360217114,"(39.76078202199582, 48.596511360217114, 0.5)",false
-Coral,small_massives_5_5_wavemort90,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,tabular_acropora_unenhanced_1_2_wavemort90,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,tabular_acropora_enhanced_3_1_bleach_resist,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,corymbose_acropora_unenhanced_3_4_fecundity,70197.44324385107,real,triang,63177.69891946596,77217.18756823619,"(63177.69891946596, 77217.18756823619, 0.5)",false
-Coral,large_massives_3_6_growth_rate,2.083333333333333e-5,real,triang,1.875e-5,2.2916666666666664e-5,"(1.875e-5, 2.2916666666666664e-5, 0.5)",false
-Coral,large_massives_3_6_mb_rate,0.088,real,triang,0.07919999999999999,0.0968,"(0.07919999999999999, 0.0968, 0.5)",false
-Coral,small_massives_6_5_wavemort90,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,corymbose_acropora_enhanced_3_3_bleach_resist,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,large_massives_6_6_mb_rate,0.02,real,triang,0.018000000000000002,0.022000000000000002,"(0.018000000000000002, 0.022000000000000002, 0.5)",false
-Coral,tabular_acropora_unenhanced_3_2_mb_rate,0.17,real,triang,0.15300000000000002,0.18700000000000003,"(0.15300000000000002, 0.18700000000000003, 0.5)",false
-Coral,small_massives_4_5_bleach_resist,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,small_massives_6_5_fecundity,93724.48365759186,real,triang,84352.03529183268,103096.93202335105,"(84352.03529183268, 103096.93202335105, 0.5)",false
-Coral,corymbose_acropora_enhanced_4_3_bleach_resist,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,small_massives_4_5_mb_rate,0.088,real,triang,0.07919999999999999,0.0968,"(0.07919999999999999, 0.0968, 0.5)",false
-Coral,tabular_acropora_enhanced_1_1_mb_rate,0.2,real,triang,0.18000000000000002,0.22000000000000003,"(0.18000000000000002, 0.22000000000000003, 0.5)",false
-Coral,tabular_acropora_enhanced_2_1_colony_area_cm2,9.62112750161874,real,triang,8.659014751456867,10.583240251780616,"(8.659014751456867, 10.583240251780616, 0.5)",false
-Coral,tabular_acropora_enhanced_2_1_mb_rate,0.2,real,triang,0.18000000000000002,0.22000000000000003,"(0.18000000000000002, 0.22000000000000003, 0.5)",false
-Coral,large_massives_1_6_fecundity,256667.1206033878,real,triang,231000.408543049,282333.8326637266,"(231000.408543049, 282333.8326637266, 0.5)",false
-Coral,tabular_acropora_unenhanced_1_2_growth_rate,0.00045918367346938784,real,triang,0.00041326530612244907,0.0005051020408163267,"(0.00041326530612244907, 0.0005051020408163267, 0.5)",false
-Coral,tabular_acropora_unenhanced_2_2_colony_area_cm2,44.178646691106465,real,triang,39.76078202199582,48.596511360217114,"(39.76078202199582, 48.596511360217114, 0.5)",false
-Coral,large_massives_6_6_fecundity,125396.56924359268,real,triang,112856.91231923341,137936.22616795194,"(112856.91231923341, 137936.22616795194, 0.5)",false
-Coral,small_massives_6_5_mb_rate,0.02,real,triang,0.018000000000000002,0.022000000000000002,"(0.018000000000000002, 0.022000000000000002, 0.5)",false
-Coral,large_massives_5_6_mb_rate,0.02,real,triang,0.018000000000000002,0.022000000000000002,"(0.018000000000000002, 0.022000000000000002, 0.5)",false
-Coral,large_massives_5_6_colony_area_cm2,7853.981633974483,real,triang,7068.583470577035,8639.379797371932,"(7068.583470577035, 8639.379797371932, 0.5)",false
-Coral,corymbose_acropora_unenhanced_5_4_mb_rate,0.03,real,triang,0.027,0.033,"(0.027, 0.033, 0.5)",false
-Coral,tabular_acropora_unenhanced_3_2_fecundity,60690.25649057995,real,triang,54621.23084152196,66759.28213963796,"(54621.23084152196, 66759.28213963796, 0.5)",false
-Coral,corymbose_acropora_enhanced_6_3_colony_area_cm2,176.71458676442586,real,triang,159.0431280879833,194.38604544086846,"(159.0431280879833, 194.38604544086846, 0.5)",false
-Coral,corymbose_acropora_unenhanced_2_4_wavemort90,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,corymbose_acropora_enhanced_6_3_mb_rate,0.04,real,triang,0.036000000000000004,0.044000000000000004,"(0.036000000000000004, 0.044000000000000004, 0.5)",false
-Coral,large_massives_2_6_colony_area_cm2,7853.981633974483,real,triang,7068.583470577035,8639.379797371932,"(7068.583470577035, 8639.379797371932, 0.5)",false
-Coral,tabular_acropora_unenhanced_3_2_growth_rate,0.00045918367346938784,real,triang,0.00041326530612244907,0.0005051020408163267,"(0.00041326530612244907, 0.0005051020408163267, 0.5)",false
-Coral,tabular_acropora_unenhanced_1_2_bleach_resist,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,corymbose_acropora_unenhanced_4_4_colony_area_cm2,706.8583470577034,real,triang,636.1725123519332,777.5441817634738,"(636.1725123519332, 777.5441817634738, 0.5)",false
-Coral,small_massives_1_5_bleach_resist,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,large_massives_2_6_wavemort90,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,corymbose_acropora_enhanced_3_3_growth_rate,0.00023999999999999998,real,triang,0.000216,0.000264,"(0.000216, 0.000264, 0.5)",false
-Coral,tabular_acropora_enhanced_6_1_fecundity,22462.70892642643,real,triang,20216.438033783787,24708.979819069074,"(20216.438033783787, 24708.979819069074, 0.5)",false
-Coral,tabular_acropora_unenhanced_4_2_mb_rate,0.17,real,triang,0.15300000000000002,0.18700000000000003,"(0.15300000000000002, 0.18700000000000003, 0.5)",false
-Coral,tabular_acropora_unenhanced_2_2_fecundity,52273.74839262087,real,triang,47046.37355335879,57501.123231882964,"(47046.37355335879, 57501.123231882964, 0.5)",false
-Coral,corymbose_acropora_unenhanced_1_4_bleach_resist,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,corymbose_acropora_enhanced_5_3_bleach_resist,1.5,real,triang,1.35,1.6500000000000001,"(1.35, 1.6500000000000001, 0.5)",false
-Coral,small_massives_4_5_wavemort90,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,tabular_acropora_unenhanced_2_2_growth_rate,0.00045918367346938784,real,triang,0.00041326530612244907,0.0005051020408163267,"(0.00041326530612244907, 0.0005051020408163267, 0.5)",false
-Coral,corymbose_acropora_unenhanced_3_4_mb_rate,0.088,real,triang,0.07919999999999999,0.0968,"(0.07919999999999999, 0.0968, 0.5)",false
-Coral,corymbose_acropora_unenhanced_4_4_fecundity,70197.44324385107,real,triang,63177.69891946596,77217.18756823619,"(63177.69891946596, 77217.18756823619, 0.5)",false
-Coral,small_massives_2_5_growth_rate,8.800000000000001e-5,real,triang,7.920000000000001e-5,9.680000000000002e-5,"(7.920000000000001e-5, 9.680000000000002e-5, 0.5)",false
-Coral,large_massives_2_6_bleach_resist,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,small_massives_5_5_bleach_resist,1.5,real,triang,1.35,1.6500000000000001,"(1.35, 1.6500000000000001, 0.5)",false
-Coral,small_massives_1_5_mb_rate,0.098,real,triang,0.0882,0.1078,"(0.0882, 0.1078, 0.5)",false
-Coral,tabular_acropora_enhanced_4_1_wavemort90,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,large_massives_4_6_mb_rate,0.088,real,triang,0.07919999999999999,0.0968,"(0.07919999999999999, 0.0968, 0.5)",false
-Coral,large_massives_1_6_colony_area_cm2,7853.981633974483,real,triang,7068.583470577035,8639.379797371932,"(7068.583470577035, 8639.379797371932, 0.5)",false
-Coral,large_massives_4_6_wavemort90,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,corymbose_acropora_enhanced_3_3_wavemort90,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,corymbose_acropora_enhanced_4_3_wavemort90,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,tabular_acropora_unenhanced_4_2_wavemort90,0.0,real,triang,0.0,0.0,"(0.0, 0.0, 0.5)",true
-Coral,large_massives_1_6_growth_rate,3.055555555555556e-5,real,triang,2.7500000000000004e-5,3.3611111111111116e-5,"(2.7500000000000004e-5, 3.3611111111111116e-5, 0.5)",false
-Coral,corymbose_acropora_enhanced_4_3_colony_area_cm2,176.71458676442586,real,triang,159.0431280879833,194.38604544086846,"(159.0431280879833, 194.38604544086846, 0.5)",false
-Coral,corymbose_acropora_unenhanced_5_4_growth_rate,4.0e-5,real,triang,3.6e-5,4.4000000000000006e-5,"(3.6e-5, 4.4000000000000006e-5, 0.5)",false
-Coral,corymbose_acropora_enhanced_5_3_fecundity,52358.580056543695,real,triang,47122.72205088933,57594.43806219807,"(47122.72205088933, 57594.43806219807, 0.5)",false
-Coral,large_massives_6_6_bleach_resist,1.0,real,triang,0.9,1.1,"(0.9, 1.1, 0.5)",false
-Coral,tabular_acropora_enhanced_6_1_growth_rate,0.0006125,real,triang,0.00055125,0.0006737500000000001,"(0.00055125, 0.0006737500000000001, 0.5)",false
+# Generated with ADRIA.jl v0.10.0 on 2023-11-25_11_53_14_950
+component,fieldname,val,bounds,default_bounds,ptype,dists,criteria_keywords,lower_bound,upper_bound,is_constant,name,description
+EnvironmentalLayer,dhw_scenario,1,"(1.0, 51.0)","(1.0, 51.0)",integer,unif,,1.0,51.0,false,DHW Scenario,DHW scenario member identifier.
+EnvironmentalLayer,wave_scenario,1,"(1.0, 51.0)","(1.0, 51.0)",integer,unif,,1.0,51.0,false,Wave Scenario,Wave scenario member identifier.
+EnvironmentalLayer,cyclone_mortality_scenario,1,"(1.0, 2.0)","(1.0, 2.0)",integer,unif,,1.0,2.0,false,Cyclone Mortality,Cyclone mortality scenario identifier.
+Intervention,guided,0,"(-1.0, 19.0)","(-1.0, 19.0)",categorical,unif,,-1.0,19.0,false,Guided,Choice of MCDA approach.
+Intervention,N_seed_TA,0,"(0.0, 1.000001e6)","(0.0, 1.000001e6)",integer,unif,,0.0,1.000001e6,false,Seeded Tabular Acropora,Number of Tabular Acropora to seed per deployment year.
+Intervention,N_seed_CA,0,"(0.0, 1.000001e6)","(0.0, 1.000001e6)",integer,unif,,0.0,1.000001e6,false,Seeded Corymbose Acropora,Number of Corymbose Acropora to seed per deployment year.
+Intervention,N_seed_SM,0,"(0.0, 1.000001e6)","(0.0, 1.000001e6)",integer,unif,,0.0,1.000001e6,false,Seeded Small Massives,Number of small massives/encrusting to seed per deployment year.
+Intervention,fogging,0.16,"(0.0, 0.3, 0.5333333333333333)","(0.0, 0.3, 0.5333333333333333)",real,triang,,0.0,0.3,false,Fogging,Assumed reduction in bleaching mortality.
+Intervention,SRM,0.0,"(0.0, 7.0, 0.0)","(0.0, 7.0, 0.0)",real,triang,,0.0,7.0,false,SRM,Reduction in DHWs due to shading.
+Intervention,a_adapt,0.0,"(0.0, 8.0, 0.0)","(0.0, 8.0, 0.0)",real,triang,,0.0,8.0,false,Assisted Adaptation,Assisted adaptation in terms of DHW resistance.
+Intervention,seed_years,10,"(5.0, 75.0, 0.07142857142857142)","(5.0, 75.0, 0.07142857142857142)",integer,triang,,5.0,75.0,false,Years to Seed,Number of years to seed for.
+Intervention,shade_years,10,"(5.0, 75.0, 0.07142857142857142)","(5.0, 75.0, 0.07142857142857142)",integer,triang,,5.0,75.0,false,Years to Shade,Number of years to shade for.
+Intervention,plan_horizon,5,"(0.0, 41.0)","(0.0, 41.0)",integer,unif,,0.0,41.0,false,Planning Horizon,How many years of projected data to take into account when selecting intervention locations (0 only accounts for current year).
+Intervention,seed_freq,5,"(0.0, 16.0)","(0.0, 16.0)",integer,unif,,0.0,16.0,false,Seeding Frequency,Frequency of seeding site selection (0 is set and forget).
+Intervention,shade_freq,1,"(0.0, 16.0)","(0.0, 16.0)",integer,unif,,0.0,16.0,false,Shading Frequency,Frequency of shading site selection (0 is set and forget).
+Intervention,seed_year_start,2,"(2.0, 26.0)","(2.0, 26.0)",integer,unif,,2.0,26.0,false,Seeding Start Year,Start seeding deployments after this number of years has elapsed.
+Intervention,shade_year_start,2,"(2.0, 26.0)","(2.0, 26.0)",integer,unif,,2.0,26.0,false,Shading Start Year,Start of shading deployments after this number of years has elapsed.
+CriteriaWeights,seed_wave_stress,1.0,"(0.0, 1.0)","(0.0, 1.0)",real,unif,"(:seed, :weight)",0.0,1.0,false,Seed Wave Stress,Importance of avoiding wave stress when seeding. Higher values places more weight on areas with low wave stress.
+CriteriaWeights,seed_heat_stress,1.0,"(0.0, 1.0)","(0.0, 1.0)",real,unif,"(:seed, :weight)",0.0,1.0,false,Seed Heat Stress,Importance of avoiding heat stress when seeding. Higher values places more weight on areas with low heat stress.
+CriteriaWeights,fog_wave_stress,1.0,"(0.0, 1.0)","(0.0, 1.0)",real,unif,"(:fog, :weight)",0.0,1.0,false,Shade Wave Stress,Importance of avoiding wave stress when fogging. Higher values places more weight on areas with low wave stress.
+CriteriaWeights,fog_heat_stress,1.0,"(0.0, 1.0)","(0.0, 1.0)",real,unif,"(:fog, :weight)",0.0,1.0,false,Shade Heat Stress,Importance of avoiding heat stress when fogging. Higher values places more weight on areas with low heat stress.
+CriteriaWeights,fog_connectivity,0.0,"(0.0, 1.0)","(0.0, 1.0)",real,unif,"(:fog, :weight)",0.0,1.0,false,Shade Connectivity,Higher values give preference to locations with high connectivity for shading deployments.
+CriteriaWeights,seed_in_connectivity,1.0,"(0.0, 1.0)","(0.0, 1.0)",real,unif,"(:seed, :weight)",0.0,1.0,false,Incoming Connectivity (Seed),"Higher values give preference to locations with high incoming connectivity (i.e., receives larvae from other sites) for enhanced coral deployments."
+CriteriaWeights,seed_out_connectivity,1.0,"(0.0, 1.0)","(0.0, 1.0)",real,unif,"(:seed, :weight)",0.0,1.0,false,Outgoing Connectivity (Seed),"Higher values give preference to locations with high outgoing connectivity (i.e., provides larvae to other sites) for enhanced coral deployments."
+CriteriaWeights,seed_depth,1.0,"(0.0, 1.0)","(0.0, 1.0)",real,unif,"(:seed, :weight)",0.0,1.0,false,Depth (Seed),Higher values give preference to depper locations for enhanced coral deployments.
+CriteriaWeights,coral_cover_low,0.0,"(0.0, 1.0)","(0.0, 1.0)",real,unif,"(:seed, :weight)",0.0,1.0,false,Low Coral Cover,Higher values give greater preference to sites with low coral cover for seeding deployments.
+CriteriaWeights,coral_cover_high,0.0,"(0.0, 1.0)","(0.0, 1.0)",real,unif,"(:fog, :weight)",0.0,1.0,false,High Coral Cover,Higher values give preference to sites with high coral cover for shading deployments.
+CriteriaWeights,seed_priority,1.0,"(0.0, 1.0)","(0.0, 1.0)",real,unif,"(:seed, :weight)",0.0,1.0,false,Predecessor Priority (Seed),Importance of seeding sites that provide larvae to priority reefs.
+CriteriaWeights,fog_priority,0.0,"(0.0, 1.0)","(0.0, 1.0)",real,unif,"(:fog, :weight)",0.0,1.0,false,Predecessor Priority (Shade),Importance of shading sites that provide larvae to priority reefs.
+CriteriaWeights,seed_zone,0.0,"(0.0, 1.0)","(0.0, 1.0)",real,unif,"(:seed, :weight)",0.0,1.0,false,Zone Predecessor (Seed),Importance of seeding sites that provide larvae to priority (target) zones.
+CriteriaWeights,fog_zone,0.0,"(0.0, 1.0)","(0.0, 1.0)",real,unif,"(:fog, :weight)",0.0,1.0,false,Zone Predecessor (Shade),Importance of shading sites that provide larvae to priority (target) zones.
+CriteriaWeights,coral_cover_tol,0.2,"(0.0, 1.0)","(0.0, 1.0)",real,unif,"(:threshold, :seed)",0.0,1.0,false,Low Area Tolerance,Tolerance for low proportional space for seeding deployments.
+CriteriaWeights,deployed_coral_risk_tol,1.0,"(0.75, 1.0)","(0.0, 1.0)",real,unif,"(:threshold, :seed, :fog)",0.75,1.0,false,Risk Tolerance,Filters out sites with heat/wave stress above threshold.
+CriteriaWeights,use_dist,1,"(0.0, 2.0)","(0.0, 2.0)",categorical,unif,"(:threshold,)",0.0,2.0,false,Use Distance Threshold,Turns distance sorting on or off.
+CriteriaWeights,dist_thresh,0.1,"(0.0, 1.0)","(0.0, 1.0)",real,unif,"(:threshold,)",0.0,1.0,false,Distance Threshold,Sites selected by MCDA must be further apart than median(dist)-dist_thresh*median(dist).
+CriteriaWeights,depth_min,5.0,"(3.0, 5.0)","(3.0, 5.0)",real,unif,"(:threshold,)",3.0,5.0,false,Minimum Depth,"Minimum depth for a site to be included for consideration.
+Note: This value will be replaced with the shallowest depth value found if all sites are found to be deeper than `depth_min + depth_offset`."
+CriteriaWeights,depth_offset,10.0,"(10.0, 25.0)","(10.0, 25.0)",real,unif,"(:threshold,)",10.0,25.0,false,Depth Offset,"Offset from minimum depth, used to indicate maximum depth."
+Coral,heritability,0.3,"(0.25, 0.5)","(0.25, 0.5)",real,unif,,0.25,0.5,false,Heritability,Heritability of DHW tolerance.
+Coral,abhorescent_acropora_1_1_mean_colony_diameter_m,0.01,"(0.009000000000000001, 0.011000000000000001, 0.5)","(0.009000000000000001, 0.011000000000000001, 0.5)",real,triang,,0.009000000000000001,0.011000000000000001,false,Abhorescent Acropora 1 1 Mean Colony Diameter M,
+Coral,abhorescent_acropora_1_1_growth_rate,1.0,"(0.9, 1.1, 0.5)","(0.9, 1.1, 0.5)",real,triang,,0.9,1.1,false,Abhorescent Acropora 1 1 Growth Rate,
+Coral,abhorescent_acropora_1_1_fecundity,0.0,"(0.0, 0.0, 0.5)","(0.0, 0.0, 0.5)",real,triang,,0.0,0.0,true,Abhorescent Acropora 1 1 Fecundity,
+Coral,abhorescent_acropora_1_1_mb_rate,0.2,"(0.18000000000000002, 0.22000000000000003, 0.5)","(0.18000000000000002, 0.22000000000000003, 0.5)",real,triang,,0.18000000000000002,0.22000000000000003,false,Abhorescent Acropora 1 1 Mb Rate,
+Coral,abhorescent_acropora_1_1_dist_mean,3.345484656,"(3.0109361904000003, 3.6800331216, 0.5)","(3.0109361904000003, 3.6800331216, 0.5)",real,triang,,3.0109361904000003,3.6800331216,false,Abhorescent Acropora 1 1 Dist Mean,
+Coral,abhorescent_acropora_1_1_dist_std,2.590016677,"(2.3310150093, 2.8490183447, 0.5)","(2.3310150093, 2.8490183447, 0.5)",real,triang,,2.3310150093,2.8490183447,false,Abhorescent Acropora 1 1 Dist Std,
+Coral,abhorescent_acropora_1_2_mean_colony_diameter_m,0.035,"(0.03150000000000001, 0.038500000000000006, 0.5)","(0.03150000000000001, 0.038500000000000006, 0.5)",real,triang,,0.03150000000000001,0.038500000000000006,false,Abhorescent Acropora 1 2 Mean Colony Diameter M,
+Coral,abhorescent_acropora_1_2_growth_rate,2.0,"(1.8, 2.2, 0.5)","(1.8, 2.2, 0.5)",real,triang,,1.8,2.2,false,Abhorescent Acropora 1 2 Growth Rate,
+Coral,abhorescent_acropora_1_2_fecundity,0.0,"(0.0, 0.0, 0.5)","(0.0, 0.0, 0.5)",real,triang,,0.0,0.0,true,Abhorescent Acropora 1 2 Fecundity,
+Coral,abhorescent_acropora_1_2_mb_rate,0.2,"(0.18000000000000002, 0.22000000000000003, 0.5)","(0.18000000000000002, 0.22000000000000003, 0.5)",real,triang,,0.18000000000000002,0.22000000000000003,false,Abhorescent Acropora 1 2 Mb Rate,
+Coral,abhorescent_acropora_1_2_dist_mean,3.345484656,"(3.0109361904000003, 3.6800331216, 0.5)","(3.0109361904000003, 3.6800331216, 0.5)",real,triang,,3.0109361904000003,3.6800331216,false,Abhorescent Acropora 1 2 Dist Mean,
+Coral,abhorescent_acropora_1_2_dist_std,2.590016677,"(2.3310150093, 2.8490183447, 0.5)","(2.3310150093, 2.8490183447, 0.5)",real,triang,,2.3310150093,2.8490183447,false,Abhorescent Acropora 1 2 Dist Std,
+Coral,abhorescent_acropora_1_3_mean_colony_diameter_m,0.075,"(0.0675, 0.0825, 0.5)","(0.0675, 0.0825, 0.5)",real,triang,,0.0675,0.0825,false,Abhorescent Acropora 1 3 Mean Colony Diameter M,
+Coral,abhorescent_acropora_1_3_growth_rate,1.2,"(1.08, 1.32, 0.5)","(1.08, 1.32, 0.5)",real,triang,,1.08,1.32,false,Abhorescent Acropora 1 3 Growth Rate,
+Coral,abhorescent_acropora_1_3_fecundity,0.0,"(0.0, 0.0, 0.5)","(0.0, 0.0, 0.5)",real,triang,,0.0,0.0,true,Abhorescent Acropora 1 3 Fecundity,
+Coral,abhorescent_acropora_1_3_mb_rate,0.004,"(0.0036000000000000003, 0.0044, 0.5)","(0.0036000000000000003, 0.0044, 0.5)",real,triang,,0.0036000000000000003,0.0044,false,Abhorescent Acropora 1 3 Mb Rate,
+Coral,abhorescent_acropora_1_3_dist_mean,3.345484656,"(3.0109361904000003, 3.6800331216, 0.5)","(3.0109361904000003, 3.6800331216, 0.5)",real,triang,,3.0109361904000003,3.6800331216,false,Abhorescent Acropora 1 3 Dist Mean,
+Coral,abhorescent_acropora_1_3_dist_std,2.590016677,"(2.3310150093, 2.8490183447, 0.5)","(2.3310150093, 2.8490183447, 0.5)",real,triang,,2.3310150093,2.8490183447,false,Abhorescent Acropora 1 3 Dist Std,
+Coral,abhorescent_acropora_1_4_mean_colony_diameter_m,0.15,"(0.135, 0.165, 0.5)","(0.135, 0.165, 0.5)",real,triang,,0.135,0.165,false,Abhorescent Acropora 1 4 Mean Colony Diameter M,
+Coral,abhorescent_acropora_1_4_growth_rate,0.8800000000000001,"(0.7920000000000001, 0.9680000000000002, 0.5)","(0.7920000000000001, 0.9680000000000002, 0.5)",real,triang,,0.7920000000000001,0.9680000000000002,false,Abhorescent Acropora 1 4 Growth Rate,
+Coral,abhorescent_acropora_1_4_fecundity,438604.91751749755,"(394744.4257657478, 482465.4092692473, 0.5)","(394744.4257657478, 482465.4092692473, 0.5)",real,triang,,394744.4257657478,482465.4092692473,false,Abhorescent Acropora 1 4 Fecundity,
+Coral,abhorescent_acropora_1_4_mb_rate,0.004,"(0.0036000000000000003, 0.0044, 0.5)","(0.0036000000000000003, 0.0044, 0.5)",real,triang,,0.0036000000000000003,0.0044,false,Abhorescent Acropora 1 4 Mb Rate,
+Coral,abhorescent_acropora_1_4_dist_mean,3.345484656,"(3.0109361904000003, 3.6800331216, 0.5)","(3.0109361904000003, 3.6800331216, 0.5)",real,triang,,3.0109361904000003,3.6800331216,false,Abhorescent Acropora 1 4 Dist Mean,
+Coral,abhorescent_acropora_1_4_dist_std,2.590016677,"(2.3310150093, 2.8490183447, 0.5)","(2.3310150093, 2.8490183447, 0.5)",real,triang,,2.3310150093,2.8490183447,false,Abhorescent Acropora 1 4 Dist Std,
+Coral,abhorescent_acropora_1_5_mean_colony_diameter_m,0.3,"(0.27, 0.33, 0.5)","(0.27, 0.33, 0.5)",real,triang,,0.27,0.33,false,Abhorescent Acropora 1 5 Mean Colony Diameter M,
+Coral,abhorescent_acropora_1_5_growth_rate,0.44000000000000006,"(0.3960000000000001, 0.4840000000000001, 0.5)","(0.3960000000000001, 0.4840000000000001, 0.5)",real,triang,,0.3960000000000001,0.4840000000000001,false,Abhorescent Acropora 1 5 Growth Rate,
+Coral,abhorescent_acropora_1_5_fecundity,646621.7284485496,"(581959.5556036946, 711283.9012934046, 0.5)","(581959.5556036946, 711283.9012934046, 0.5)",real,triang,,581959.5556036946,711283.9012934046,false,Abhorescent Acropora 1 5 Fecundity,
+Coral,abhorescent_acropora_1_5_mb_rate,0.002,"(0.0018000000000000002, 0.0022, 0.5)","(0.0018000000000000002, 0.0022, 0.5)",real,triang,,0.0018000000000000002,0.0022,false,Abhorescent Acropora 1 5 Mb Rate,
+Coral,abhorescent_acropora_1_5_dist_mean,3.345484656,"(3.0109361904000003, 3.6800331216, 0.5)","(3.0109361904000003, 3.6800331216, 0.5)",real,triang,,3.0109361904000003,3.6800331216,false,Abhorescent Acropora 1 5 Dist Mean,
+Coral,abhorescent_acropora_1_5_dist_std,2.590016677,"(2.3310150093, 2.8490183447, 0.5)","(2.3310150093, 2.8490183447, 0.5)",real,triang,,2.3310150093,2.8490183447,false,Abhorescent Acropora 1 5 Dist Std,
+Coral,abhorescent_acropora_1_6_mean_colony_diameter_m,0.6,"(0.54, 0.66, 0.5)","(0.54, 0.66, 0.5)",real,triang,,0.54,0.66,false,Abhorescent Acropora 1 6 Mean Colony Diameter M,
+Coral,abhorescent_acropora_1_6_growth_rate,0.04400000000000001,"(0.03960000000000001, 0.04840000000000002, 0.5)","(0.03960000000000001, 0.04840000000000002, 0.5)",real,triang,,0.03960000000000001,0.04840000000000002,false,Abhorescent Acropora 1 6 Growth Rate,
+Coral,abhorescent_acropora_1_6_fecundity,953294.5094832616,"(857965.0585349355, 1.0486239604315879e6, 0.5)","(857965.0585349355, 1.0486239604315879e6, 0.5)",real,triang,,857965.0585349355,1.0486239604315879e6,false,Abhorescent Acropora 1 6 Fecundity,
+Coral,abhorescent_acropora_1_6_mb_rate,0.002,"(0.0018000000000000002, 0.0022, 0.5)","(0.0018000000000000002, 0.0022, 0.5)",real,triang,,0.0018000000000000002,0.0022,false,Abhorescent Acropora 1 6 Mb Rate,
+Coral,abhorescent_acropora_1_6_dist_mean,3.345484656,"(3.0109361904000003, 3.6800331216, 0.5)","(3.0109361904000003, 3.6800331216, 0.5)",real,triang,,3.0109361904000003,3.6800331216,false,Abhorescent Acropora 1 6 Dist Mean,
+Coral,abhorescent_acropora_1_6_dist_std,2.590016677,"(2.3310150093, 2.8490183447, 0.5)","(2.3310150093, 2.8490183447, 0.5)",real,triang,,2.3310150093,2.8490183447,false,Abhorescent Acropora 1 6 Dist Std,
+Coral,tabular_acropora_2_1_mean_colony_diameter_m,0.01,"(0.009000000000000001, 0.011000000000000001, 0.5)","(0.009000000000000001, 0.011000000000000001, 0.5)",real,triang,,0.009000000000000001,0.011000000000000001,false,Tabular Acropora 2 1 Mean Colony Diameter M,
+Coral,tabular_acropora_2_1_growth_rate,1.0,"(0.9, 1.1, 0.5)","(0.9, 1.1, 0.5)",real,triang,,0.9,1.1,false,Tabular Acropora 2 1 Growth Rate,
+Coral,tabular_acropora_2_1_fecundity,0.0,"(0.0, 0.0, 0.5)","(0.0, 0.0, 0.5)",real,triang,,0.0,0.0,true,Tabular Acropora 2 1 Fecundity,
+Coral,tabular_acropora_2_1_mb_rate,0.2,"(0.18000000000000002, 0.22000000000000003, 0.5)","(0.18000000000000002, 0.22000000000000003, 0.5)",real,triang,,0.18000000000000002,0.22000000000000003,false,Tabular Acropora 2 1 Mb Rate,
+Coral,tabular_acropora_2_1_dist_mean,3.751612251,"(3.3764510259000002, 4.1267734761, 0.5)","(3.3764510259000002, 4.1267734761, 0.5)",real,triang,,3.3764510259000002,4.1267734761,false,Tabular Acropora 2 1 Dist Mean,
+Coral,tabular_acropora_2_1_dist_std,2.904433676,"(2.6139903084, 3.1948770436000005, 0.5)","(2.6139903084, 3.1948770436000005, 0.5)",real,triang,,2.6139903084,3.1948770436000005,false,Tabular Acropora 2 1 Dist Std,
+Coral,tabular_acropora_2_2_mean_colony_diameter_m,0.035,"(0.03150000000000001, 0.038500000000000006, 0.5)","(0.03150000000000001, 0.038500000000000006, 0.5)",real,triang,,0.03150000000000001,0.038500000000000006,false,Tabular Acropora 2 2 Mean Colony Diameter M,
+Coral,tabular_acropora_2_2_growth_rate,2.0,"(1.8, 2.2, 0.5)","(1.8, 2.2, 0.5)",real,triang,,1.8,2.2,false,Tabular Acropora 2 2 Growth Rate,
+Coral,tabular_acropora_2_2_fecundity,0.0,"(0.0, 0.0, 0.5)","(0.0, 0.0, 0.5)",real,triang,,0.0,0.0,true,Tabular Acropora 2 2 Fecundity,
+Coral,tabular_acropora_2_2_mb_rate,0.2,"(0.18000000000000002, 0.22000000000000003, 0.5)","(0.18000000000000002, 0.22000000000000003, 0.5)",real,triang,,0.18000000000000002,0.22000000000000003,false,Tabular Acropora 2 2 Mb Rate,
+Coral,tabular_acropora_2_2_dist_mean,3.751612251,"(3.3764510259000002, 4.1267734761, 0.5)","(3.3764510259000002, 4.1267734761, 0.5)",real,triang,,3.3764510259000002,4.1267734761,false,Tabular Acropora 2 2 Dist Mean,
+Coral,tabular_acropora_2_2_dist_std,2.904433676,"(2.6139903084, 3.1948770436000005, 0.5)","(2.6139903084, 3.1948770436000005, 0.5)",real,triang,,2.6139903084,3.1948770436000005,false,Tabular Acropora 2 2 Dist Std,
+Coral,tabular_acropora_2_3_mean_colony_diameter_m,0.075,"(0.0675, 0.0825, 0.5)","(0.0675, 0.0825, 0.5)",real,triang,,0.0675,0.0825,false,Tabular Acropora 2 3 Mean Colony Diameter M,
+Coral,tabular_acropora_2_3_growth_rate,1.2,"(1.08, 1.32, 0.5)","(1.08, 1.32, 0.5)",real,triang,,1.08,1.32,false,Tabular Acropora 2 3 Growth Rate,
+Coral,tabular_acropora_2_3_fecundity,0.0,"(0.0, 0.0, 0.5)","(0.0, 0.0, 0.5)",real,triang,,0.0,0.0,true,Tabular Acropora 2 3 Fecundity,
+Coral,tabular_acropora_2_3_mb_rate,0.19,"(0.171, 0.20900000000000002, 0.5)","(0.171, 0.20900000000000002, 0.5)",real,triang,,0.171,0.20900000000000002,false,Tabular Acropora 2 3 Mb Rate,
+Coral,tabular_acropora_2_3_dist_mean,3.751612251,"(3.3764510259000002, 4.1267734761, 0.5)","(3.3764510259000002, 4.1267734761, 0.5)",real,triang,,3.3764510259000002,4.1267734761,false,Tabular Acropora 2 3 Dist Mean,
+Coral,tabular_acropora_2_3_dist_std,2.904433676,"(2.6139903084, 3.1948770436000005, 0.5)","(2.6139903084, 3.1948770436000005, 0.5)",real,triang,,2.6139903084,3.1948770436000005,false,Tabular Acropora 2 3 Dist Std,
+Coral,tabular_acropora_2_4_mean_colony_diameter_m,0.15,"(0.135, 0.165, 0.5)","(0.135, 0.165, 0.5)",real,triang,,0.135,0.165,false,Tabular Acropora 2 4 Mean Colony Diameter M,
+Coral,tabular_acropora_2_4_growth_rate,0.8800000000000001,"(0.7920000000000001, 0.9680000000000002, 0.5)","(0.7920000000000001, 0.9680000000000002, 0.5)",real,triang,,0.7920000000000001,0.9680000000000002,false,Tabular Acropora 2 4 Growth Rate,
+Coral,tabular_acropora_2_4_fecundity,438604.91751749755,"(394744.4257657478, 482465.4092692473, 0.5)","(394744.4257657478, 482465.4092692473, 0.5)",real,triang,,394744.4257657478,482465.4092692473,false,Tabular Acropora 2 4 Fecundity,
+Coral,tabular_acropora_2_4_mb_rate,0.19,"(0.171, 0.20900000000000002, 0.5)","(0.171, 0.20900000000000002, 0.5)",real,triang,,0.171,0.20900000000000002,false,Tabular Acropora 2 4 Mb Rate,
+Coral,tabular_acropora_2_4_dist_mean,3.751612251,"(3.3764510259000002, 4.1267734761, 0.5)","(3.3764510259000002, 4.1267734761, 0.5)",real,triang,,3.3764510259000002,4.1267734761,false,Tabular Acropora 2 4 Dist Mean,
+Coral,tabular_acropora_2_4_dist_std,2.904433676,"(2.6139903084, 3.1948770436000005, 0.5)","(2.6139903084, 3.1948770436000005, 0.5)",real,triang,,2.6139903084,3.1948770436000005,false,Tabular Acropora 2 4 Dist Std,
+Coral,tabular_acropora_2_5_mean_colony_diameter_m,0.3,"(0.27, 0.33, 0.5)","(0.27, 0.33, 0.5)",real,triang,,0.27,0.33,false,Tabular Acropora 2 5 Mean Colony Diameter M,
+Coral,tabular_acropora_2_5_growth_rate,0.44000000000000006,"(0.3960000000000001, 0.4840000000000001, 0.5)","(0.3960000000000001, 0.4840000000000001, 0.5)",real,triang,,0.3960000000000001,0.4840000000000001,false,Tabular Acropora 2 5 Growth Rate,
+Coral,tabular_acropora_2_5_fecundity,646621.7284485496,"(581959.5556036946, 711283.9012934046, 0.5)","(581959.5556036946, 711283.9012934046, 0.5)",real,triang,,581959.5556036946,711283.9012934046,false,Tabular Acropora 2 5 Fecundity,
+Coral,tabular_acropora_2_5_mb_rate,0.098,"(0.0882, 0.1078, 0.5)","(0.0882, 0.1078, 0.5)",real,triang,,0.0882,0.1078,false,Tabular Acropora 2 5 Mb Rate,
+Coral,tabular_acropora_2_5_dist_mean,3.751612251,"(3.3764510259000002, 4.1267734761, 0.5)","(3.3764510259000002, 4.1267734761, 0.5)",real,triang,,3.3764510259000002,4.1267734761,false,Tabular Acropora 2 5 Dist Mean,
+Coral,tabular_acropora_2_5_dist_std,2.904433676,"(2.6139903084, 3.1948770436000005, 0.5)","(2.6139903084, 3.1948770436000005, 0.5)",real,triang,,2.6139903084,3.1948770436000005,false,Tabular Acropora 2 5 Dist Std,
+Coral,tabular_acropora_2_6_mean_colony_diameter_m,0.6,"(0.54, 0.66, 0.5)","(0.54, 0.66, 0.5)",real,triang,,0.54,0.66,false,Tabular Acropora 2 6 Mean Colony Diameter M,
+Coral,tabular_acropora_2_6_growth_rate,0.04400000000000001,"(0.03960000000000001, 0.04840000000000002, 0.5)","(0.03960000000000001, 0.04840000000000002, 0.5)",real,triang,,0.03960000000000001,0.04840000000000002,false,Tabular Acropora 2 6 Growth Rate,
+Coral,tabular_acropora_2_6_fecundity,953294.5094832616,"(857965.0585349355, 1.0486239604315879e6, 0.5)","(857965.0585349355, 1.0486239604315879e6, 0.5)",real,triang,,857965.0585349355,1.0486239604315879e6,false,Tabular Acropora 2 6 Fecundity,
+Coral,tabular_acropora_2_6_mb_rate,0.098,"(0.0882, 0.1078, 0.5)","(0.0882, 0.1078, 0.5)",real,triang,,0.0882,0.1078,false,Tabular Acropora 2 6 Mb Rate,
+Coral,tabular_acropora_2_6_dist_mean,3.751612251,"(3.3764510259000002, 4.1267734761, 0.5)","(3.3764510259000002, 4.1267734761, 0.5)",real,triang,,3.3764510259000002,4.1267734761,false,Tabular Acropora 2 6 Dist Mean,
+Coral,tabular_acropora_2_6_dist_std,2.904433676,"(2.6139903084, 3.1948770436000005, 0.5)","(2.6139903084, 3.1948770436000005, 0.5)",real,triang,,2.6139903084,3.1948770436000005,false,Tabular Acropora 2 6 Dist Std,
+Coral,corymbose_acropora_3_1_mean_colony_diameter_m,0.01,"(0.009000000000000001, 0.011000000000000001, 0.5)","(0.009000000000000001, 0.011000000000000001, 0.5)",real,triang,,0.009000000000000001,0.011000000000000001,false,Corymbose Acropora 3 1 Mean Colony Diameter M,
+Coral,corymbose_acropora_3_1_growth_rate,1.0,"(0.9, 1.1, 0.5)","(0.9, 1.1, 0.5)",real,triang,,0.9,1.1,false,Corymbose Acropora 3 1 Growth Rate,
+Coral,corymbose_acropora_3_1_fecundity,0.0,"(0.0, 0.0, 0.5)","(0.0, 0.0, 0.5)",real,triang,,0.0,0.0,true,Corymbose Acropora 3 1 Fecundity,
+Coral,corymbose_acropora_3_1_mb_rate,0.2,"(0.18000000000000002, 0.22000000000000003, 0.5)","(0.18000000000000002, 0.22000000000000003, 0.5)",real,triang,,0.18000000000000002,0.22000000000000003,false,Corymbose Acropora 3 1 Mb Rate,
+Coral,corymbose_acropora_3_1_dist_mean,4.081622683,"(3.6734604147, 4.489784951300001, 0.5)","(3.6734604147, 4.489784951300001, 0.5)",real,triang,,3.6734604147,4.489784951300001,false,Corymbose Acropora 3 1 Dist Mean,
+Coral,corymbose_acropora_3_1_dist_std,3.159922076,"(2.8439298684, 3.4759142836000003, 0.5)","(2.8439298684, 3.4759142836000003, 0.5)",real,triang,,2.8439298684,3.4759142836000003,false,Corymbose Acropora 3 1 Dist Std,
+Coral,corymbose_acropora_3_2_mean_colony_diameter_m,0.035,"(0.03150000000000001, 0.038500000000000006, 0.5)","(0.03150000000000001, 0.038500000000000006, 0.5)",real,triang,,0.03150000000000001,0.038500000000000006,false,Corymbose Acropora 3 2 Mean Colony Diameter M,
+Coral,corymbose_acropora_3_2_growth_rate,2.0,"(1.8, 2.2, 0.5)","(1.8, 2.2, 0.5)",real,triang,,1.8,2.2,false,Corymbose Acropora 3 2 Growth Rate,
+Coral,corymbose_acropora_3_2_fecundity,0.0,"(0.0, 0.0, 0.5)","(0.0, 0.0, 0.5)",real,triang,,0.0,0.0,true,Corymbose Acropora 3 2 Fecundity,
+Coral,corymbose_acropora_3_2_mb_rate,0.2,"(0.18000000000000002, 0.22000000000000003, 0.5)","(0.18000000000000002, 0.22000000000000003, 0.5)",real,triang,,0.18000000000000002,0.22000000000000003,false,Corymbose Acropora 3 2 Mb Rate,
+Coral,corymbose_acropora_3_2_dist_mean,4.081622683,"(3.6734604147, 4.489784951300001, 0.5)","(3.6734604147, 4.489784951300001, 0.5)",real,triang,,3.6734604147,4.489784951300001,false,Corymbose Acropora 3 2 Dist Mean,
+Coral,corymbose_acropora_3_2_dist_std,3.159922076,"(2.8439298684, 3.4759142836000003, 0.5)","(2.8439298684, 3.4759142836000003, 0.5)",real,triang,,2.8439298684,3.4759142836000003,false,Corymbose Acropora 3 2 Dist Std,
+Coral,corymbose_acropora_3_3_mean_colony_diameter_m,0.075,"(0.0675, 0.0825, 0.5)","(0.0675, 0.0825, 0.5)",real,triang,,0.0675,0.0825,false,Corymbose Acropora 3 3 Mean Colony Diameter M,
+Coral,corymbose_acropora_3_3_growth_rate,1.2,"(1.08, 1.32, 0.5)","(1.08, 1.32, 0.5)",real,triang,,1.08,1.32,false,Corymbose Acropora 3 3 Growth Rate,
+Coral,corymbose_acropora_3_3_fecundity,0.0,"(0.0, 0.0, 0.5)","(0.0, 0.0, 0.5)",real,triang,,0.0,0.0,true,Corymbose Acropora 3 3 Fecundity,
+Coral,corymbose_acropora_3_3_mb_rate,0.172,"(0.1548, 0.1892, 0.5)","(0.1548, 0.1892, 0.5)",real,triang,,0.1548,0.1892,false,Corymbose Acropora 3 3 Mb Rate,
+Coral,corymbose_acropora_3_3_dist_mean,4.081622683,"(3.6734604147, 4.489784951300001, 0.5)","(3.6734604147, 4.489784951300001, 0.5)",real,triang,,3.6734604147,4.489784951300001,false,Corymbose Acropora 3 3 Dist Mean,
+Coral,corymbose_acropora_3_3_dist_std,3.159922076,"(2.8439298684, 3.4759142836000003, 0.5)","(2.8439298684, 3.4759142836000003, 0.5)",real,triang,,2.8439298684,3.4759142836000003,false,Corymbose Acropora 3 3 Dist Std,
+Coral,corymbose_acropora_3_4_mean_colony_diameter_m,0.15,"(0.135, 0.165, 0.5)","(0.135, 0.165, 0.5)",real,triang,,0.135,0.165,false,Corymbose Acropora 3 4 Mean Colony Diameter M,
+Coral,corymbose_acropora_3_4_growth_rate,0.6,"(0.54, 0.66, 0.5)","(0.54, 0.66, 0.5)",real,triang,,0.54,0.66,false,Corymbose Acropora 3 4 Growth Rate,
+Coral,corymbose_acropora_3_4_fecundity,218902.2999376769,"(197012.0699439092, 240792.52993144462, 0.5)","(197012.0699439092, 240792.52993144462, 0.5)",real,triang,,197012.0699439092,240792.52993144462,false,Corymbose Acropora 3 4 Fecundity,
+Coral,corymbose_acropora_3_4_mb_rate,0.172,"(0.1548, 0.1892, 0.5)","(0.1548, 0.1892, 0.5)",real,triang,,0.1548,0.1892,false,Corymbose Acropora 3 4 Mb Rate,
+Coral,corymbose_acropora_3_4_dist_mean,4.081622683,"(3.6734604147, 4.489784951300001, 0.5)","(3.6734604147, 4.489784951300001, 0.5)",real,triang,,3.6734604147,4.489784951300001,false,Corymbose Acropora 3 4 Dist Mean,
+Coral,corymbose_acropora_3_4_dist_std,3.159922076,"(2.8439298684, 3.4759142836000003, 0.5)","(2.8439298684, 3.4759142836000003, 0.5)",real,triang,,2.8439298684,3.4759142836000003,false,Corymbose Acropora 3 4 Dist Std,
+Coral,corymbose_acropora_3_5_mean_colony_diameter_m,0.3,"(0.27, 0.33, 0.5)","(0.27, 0.33, 0.5)",real,triang,,0.27,0.33,false,Corymbose Acropora 3 5 Mean Colony Diameter M,
+Coral,corymbose_acropora_3_5_growth_rate,0.3,"(0.27, 0.33, 0.5)","(0.27, 0.33, 0.5)",real,triang,,0.27,0.33,false,Corymbose Acropora 3 5 Growth Rate,
+Coral,corymbose_acropora_3_5_fecundity,234613.675961362,"(211152.3083652258, 258075.04355749823, 0.5)","(211152.3083652258, 258075.04355749823, 0.5)",real,triang,,211152.3083652258,258075.04355749823,false,Corymbose Acropora 3 5 Fecundity,
+Coral,corymbose_acropora_3_5_mb_rate,0.088,"(0.07919999999999999, 0.0968, 0.5)","(0.07919999999999999, 0.0968, 0.5)",real,triang,,0.07919999999999999,0.0968,false,Corymbose Acropora 3 5 Mb Rate,
+Coral,corymbose_acropora_3_5_dist_mean,4.081622683,"(3.6734604147, 4.489784951300001, 0.5)","(3.6734604147, 4.489784951300001, 0.5)",real,triang,,3.6734604147,4.489784951300001,false,Corymbose Acropora 3 5 Dist Mean,
+Coral,corymbose_acropora_3_5_dist_std,3.159922076,"(2.8439298684, 3.4759142836000003, 0.5)","(2.8439298684, 3.4759142836000003, 0.5)",real,triang,,2.8439298684,3.4759142836000003,false,Corymbose Acropora 3 5 Dist Std,
+Coral,corymbose_acropora_3_6_mean_colony_diameter_m,0.6,"(0.54, 0.66, 0.5)","(0.54, 0.66, 0.5)",real,triang,,0.54,0.66,false,Corymbose Acropora 3 6 Mean Colony Diameter M,
+Coral,corymbose_acropora_3_6_growth_rate,0.03,"(0.027, 0.033, 0.5)","(0.027, 0.033, 0.5)",real,triang,,0.027,0.033,false,Corymbose Acropora 3 6 Growth Rate,
+Coral,corymbose_acropora_3_6_fecundity,251452.71184347713,"(226307.4406591294, 276597.98302782484, 0.5)","(226307.4406591294, 276597.98302782484, 0.5)",real,triang,,226307.4406591294,276597.98302782484,false,Corymbose Acropora 3 6 Fecundity,
+Coral,corymbose_acropora_3_6_mb_rate,0.088,"(0.07919999999999999, 0.0968, 0.5)","(0.07919999999999999, 0.0968, 0.5)",real,triang,,0.07919999999999999,0.0968,false,Corymbose Acropora 3 6 Mb Rate,
+Coral,corymbose_acropora_3_6_dist_mean,4.081622683,"(3.6734604147, 4.489784951300001, 0.5)","(3.6734604147, 4.489784951300001, 0.5)",real,triang,,3.6734604147,4.489784951300001,false,Corymbose Acropora 3 6 Dist Mean,
+Coral,corymbose_acropora_3_6_dist_std,3.159922076,"(2.8439298684, 3.4759142836000003, 0.5)","(2.8439298684, 3.4759142836000003, 0.5)",real,triang,,2.8439298684,3.4759142836000003,false,Corymbose Acropora 3 6 Dist Std,
+Coral,corymbose_non_acropora_4_1_mean_colony_diameter_m,0.01,"(0.009000000000000001, 0.011000000000000001, 0.5)","(0.009000000000000001, 0.011000000000000001, 0.5)",real,triang,,0.009000000000000001,0.011000000000000001,false,Corymbose Non Acropora 4 1 Mean Colony Diameter M,
+Coral,corymbose_non_acropora_4_1_growth_rate,1.0,"(0.9, 1.1, 0.5)","(0.9, 1.1, 0.5)",real,triang,,0.9,1.1,false,Corymbose Non Acropora 4 1 Growth Rate,
+Coral,corymbose_non_acropora_4_1_fecundity,0.0,"(0.0, 0.0, 0.5)","(0.0, 0.0, 0.5)",real,triang,,0.0,0.0,true,Corymbose Non Acropora 4 1 Fecundity,
+Coral,corymbose_non_acropora_4_1_mb_rate,0.2,"(0.18000000000000002, 0.22000000000000003, 0.5)","(0.18000000000000002, 0.22000000000000003, 0.5)",real,triang,,0.18000000000000002,0.22000000000000003,false,Corymbose Non Acropora 4 1 Mb Rate,
+Coral,corymbose_non_acropora_4_1_dist_mean,4.487465256,"(4.0387187304, 4.936211781600001, 0.5)","(4.0387187304, 4.936211781600001, 0.5)",real,triang,,4.0387187304,4.936211781600001,false,Corymbose Non Acropora 4 1 Dist Mean,
+Coral,corymbose_non_acropora_4_1_dist_std,3.474118416,"(3.1267065744, 3.8215302576000005, 0.5)","(3.1267065744, 3.8215302576000005, 0.5)",real,triang,,3.1267065744,3.8215302576000005,false,Corymbose Non Acropora 4 1 Dist Std,
+Coral,corymbose_non_acropora_4_2_mean_colony_diameter_m,0.035,"(0.03150000000000001, 0.038500000000000006, 0.5)","(0.03150000000000001, 0.038500000000000006, 0.5)",real,triang,,0.03150000000000001,0.038500000000000006,false,Corymbose Non Acropora 4 2 Mean Colony Diameter M,
+Coral,corymbose_non_acropora_4_2_growth_rate,1.5999999999999999,"(1.44, 1.76, 0.5)","(1.44, 1.76, 0.5)",real,triang,,1.44,1.76,false,Corymbose Non Acropora 4 2 Growth Rate,
+Coral,corymbose_non_acropora_4_2_fecundity,0.0,"(0.0, 0.0, 0.5)","(0.0, 0.0, 0.5)",real,triang,,0.0,0.0,true,Corymbose Non Acropora 4 2 Fecundity,
+Coral,corymbose_non_acropora_4_2_mb_rate,0.2,"(0.18000000000000002, 0.22000000000000003, 0.5)","(0.18000000000000002, 0.22000000000000003, 0.5)",real,triang,,0.18000000000000002,0.22000000000000003,false,Corymbose Non Acropora 4 2 Mb Rate,
+Coral,corymbose_non_acropora_4_2_dist_mean,4.487465256,"(4.0387187304, 4.936211781600001, 0.5)","(4.0387187304, 4.936211781600001, 0.5)",real,triang,,4.0387187304,4.936211781600001,false,Corymbose Non Acropora 4 2 Dist Mean,
+Coral,corymbose_non_acropora_4_2_dist_std,3.474118416,"(3.1267065744, 3.8215302576000005, 0.5)","(3.1267065744, 3.8215302576000005, 0.5)",real,triang,,3.1267065744,3.8215302576000005,false,Corymbose Non Acropora 4 2 Dist Std,
+Coral,corymbose_non_acropora_4_3_mean_colony_diameter_m,0.075,"(0.0675, 0.0825, 0.5)","(0.0675, 0.0825, 0.5)",real,triang,,0.0675,0.0825,false,Corymbose Non Acropora 4 3 Mean Colony Diameter M,
+Coral,corymbose_non_acropora_4_3_growth_rate,0.96,"(0.864, 1.056, 0.5)","(0.864, 1.056, 0.5)",real,triang,,0.864,1.056,false,Corymbose Non Acropora 4 3 Growth Rate,
+Coral,corymbose_non_acropora_4_3_fecundity,0.0,"(0.0, 0.0, 0.5)","(0.0, 0.0, 0.5)",real,triang,,0.0,0.0,true,Corymbose Non Acropora 4 3 Fecundity,
+Coral,corymbose_non_acropora_4_3_mb_rate,0.226,"(0.2034, 0.24860000000000002, 0.5)","(0.2034, 0.24860000000000002, 0.5)",real,triang,,0.2034,0.24860000000000002,false,Corymbose Non Acropora 4 3 Mb Rate,
+Coral,corymbose_non_acropora_4_3_dist_mean,4.487465256,"(4.0387187304, 4.936211781600001, 0.5)","(4.0387187304, 4.936211781600001, 0.5)",real,triang,,4.0387187304,4.936211781600001,false,Corymbose Non Acropora 4 3 Dist Mean,
+Coral,corymbose_non_acropora_4_3_dist_std,3.474118416,"(3.1267065744, 3.8215302576000005, 0.5)","(3.1267065744, 3.8215302576000005, 0.5)",real,triang,,3.1267065744,3.8215302576000005,false,Corymbose Non Acropora 4 3 Dist Std,
+Coral,corymbose_non_acropora_4_4_mean_colony_diameter_m,0.15,"(0.135, 0.165, 0.5)","(0.135, 0.165, 0.5)",real,triang,,0.135,0.165,false,Corymbose Non Acropora 4 4 Mean Colony Diameter M,
+Coral,corymbose_non_acropora_4_4_growth_rate,0.48,"(0.432, 0.528, 0.5)","(0.432, 0.528, 0.5)",real,triang,,0.432,0.528,false,Corymbose Non Acropora 4 4 Growth Rate,
+Coral,corymbose_non_acropora_4_4_fecundity,1.4291109373418523e6,"(1.2861998436076671e6, 1.5720220310760378e6, 0.5)","(1.2861998436076671e6, 1.5720220310760378e6, 0.5)",real,triang,,1.2861998436076671e6,1.5720220310760378e6,false,Corymbose Non Acropora 4 4 Fecundity,
+Coral,corymbose_non_acropora_4_4_mb_rate,0.226,"(0.2034, 0.24860000000000002, 0.5)","(0.2034, 0.24860000000000002, 0.5)",real,triang,,0.2034,0.24860000000000002,false,Corymbose Non Acropora 4 4 Mb Rate,
+Coral,corymbose_non_acropora_4_4_dist_mean,4.487465256,"(4.0387187304, 4.936211781600001, 0.5)","(4.0387187304, 4.936211781600001, 0.5)",real,triang,,4.0387187304,4.936211781600001,false,Corymbose Non Acropora 4 4 Dist Mean,
+Coral,corymbose_non_acropora_4_4_dist_std,3.474118416,"(3.1267065744, 3.8215302576000005, 0.5)","(3.1267065744, 3.8215302576000005, 0.5)",real,triang,,3.1267065744,3.8215302576000005,false,Corymbose Non Acropora 4 4 Dist Std,
+Coral,corymbose_non_acropora_4_5_mean_colony_diameter_m,0.3,"(0.27, 0.33, 0.5)","(0.27, 0.33, 0.5)",real,triang,,0.27,0.33,false,Corymbose Non Acropora 4 5 Mean Colony Diameter M,
+Coral,corymbose_non_acropora_4_5_growth_rate,0.24,"(0.216, 0.264, 0.5)","(0.216, 0.264, 0.5)",real,triang,,0.216,0.264,false,Corymbose Non Acropora 4 5 Growth Rate,
+Coral,corymbose_non_acropora_4_5_fecundity,8.311552108387676e6,"(7.480396897548908e6, 9.142707319226444e6, 0.5)","(7.480396897548908e6, 9.142707319226444e6, 0.5)",real,triang,,7.480396897548908e6,9.142707319226444e6,false,Corymbose Non Acropora 4 5 Fecundity,
+Coral,corymbose_non_acropora_4_5_mb_rate,0.116,"(0.1044, 0.12760000000000002, 0.5)","(0.1044, 0.12760000000000002, 0.5)",real,triang,,0.1044,0.12760000000000002,false,Corymbose Non Acropora 4 5 Mb Rate,
+Coral,corymbose_non_acropora_4_5_dist_mean,4.487465256,"(4.0387187304, 4.936211781600001, 0.5)","(4.0387187304, 4.936211781600001, 0.5)",real,triang,,4.0387187304,4.936211781600001,false,Corymbose Non Acropora 4 5 Dist Mean,
+Coral,corymbose_non_acropora_4_5_dist_std,3.474118416,"(3.1267065744, 3.8215302576000005, 0.5)","(3.1267065744, 3.8215302576000005, 0.5)",real,triang,,3.1267065744,3.8215302576000005,false,Corymbose Non Acropora 4 5 Dist Std,
+Coral,corymbose_non_acropora_4_6_mean_colony_diameter_m,0.6,"(0.54, 0.66, 0.5)","(0.54, 0.66, 0.5)",real,triang,,0.54,0.66,false,Corymbose Non Acropora 4 6 Mean Colony Diameter M,
+Coral,corymbose_non_acropora_4_6_growth_rate,0.024,"(0.0216, 0.026400000000000003, 0.5)","(0.0216, 0.026400000000000003, 0.5)",real,triang,,0.0216,0.026400000000000003,false,Corymbose Non Acropora 4 6 Growth Rate,
+Coral,corymbose_non_acropora_4_6_fecundity,4.833907336748558e7,"(4.350516603073703e7, 5.3172980704234146e7, 0.5)","(4.350516603073703e7, 5.3172980704234146e7, 0.5)",real,triang,,4.350516603073703e7,5.3172980704234146e7,false,Corymbose Non Acropora 4 6 Fecundity,
+Coral,corymbose_non_acropora_4_6_mb_rate,0.116,"(0.1044, 0.12760000000000002, 0.5)","(0.1044, 0.12760000000000002, 0.5)",real,triang,,0.1044,0.12760000000000002,false,Corymbose Non Acropora 4 6 Mb Rate,
+Coral,corymbose_non_acropora_4_6_dist_mean,4.487465256,"(4.0387187304, 4.936211781600001, 0.5)","(4.0387187304, 4.936211781600001, 0.5)",real,triang,,4.0387187304,4.936211781600001,false,Corymbose Non Acropora 4 6 Dist Mean,
+Coral,corymbose_non_acropora_4_6_dist_std,3.474118416,"(3.1267065744, 3.8215302576000005, 0.5)","(3.1267065744, 3.8215302576000005, 0.5)",real,triang,,3.1267065744,3.8215302576000005,false,Corymbose Non Acropora 4 6 Dist Std,
+Coral,small_massives_5_1_mean_colony_diameter_m,0.01,"(0.009000000000000001, 0.011000000000000001, 0.5)","(0.009000000000000001, 0.011000000000000001, 0.5)",real,triang,,0.009000000000000001,0.011000000000000001,false,Small Massives 5 1 Mean Colony Diameter M,
+Coral,small_massives_5_1_growth_rate,1.0,"(0.9, 1.1, 0.5)","(0.9, 1.1, 0.5)",real,triang,,0.9,1.1,false,Small Massives 5 1 Growth Rate,
+Coral,small_massives_5_1_fecundity,0.0,"(0.0, 0.0, 0.5)","(0.0, 0.0, 0.5)",real,triang,,0.0,0.0,true,Small Massives 5 1 Fecundity,
+Coral,small_massives_5_1_mb_rate,0.2,"(0.18000000000000002, 0.22000000000000003, 0.5)","(0.18000000000000002, 0.22000000000000003, 0.5)",real,triang,,0.18000000000000002,0.22000000000000003,false,Small Massives 5 1 Mb Rate,
+Coral,small_massives_5_1_dist_mean,6.165751937,"(5.549176743299999, 6.7823271307, 0.5)","(5.549176743299999, 6.7823271307, 0.5)",real,triang,,5.549176743299999,6.7823271307,false,Small Massives 5 1 Dist Mean,
+Coral,small_massives_5_1_dist_std,4.773419097,"(4.2960771873, 5.2507610067, 0.5)","(4.2960771873, 5.2507610067, 0.5)",real,triang,,4.2960771873,5.2507610067,false,Small Massives 5 1 Dist Std,
+Coral,small_massives_5_2_mean_colony_diameter_m,0.035,"(0.03150000000000001, 0.038500000000000006, 0.5)","(0.03150000000000001, 0.038500000000000006, 0.5)",real,triang,,0.03150000000000001,0.038500000000000006,false,Small Massives 5 2 Mean Colony Diameter M,
+Coral,small_massives_5_2_growth_rate,0.6666666666666666,"(0.6, 0.7333333333333334, 0.5)","(0.6, 0.7333333333333334, 0.5)",real,triang,,0.6,0.7333333333333334,false,Small Massives 5 2 Growth Rate,
+Coral,small_massives_5_2_fecundity,0.0,"(0.0, 0.0, 0.5)","(0.0, 0.0, 0.5)",real,triang,,0.0,0.0,true,Small Massives 5 2 Fecundity,
+Coral,small_massives_5_2_mb_rate,0.2,"(0.18000000000000002, 0.22000000000000003, 0.5)","(0.18000000000000002, 0.22000000000000003, 0.5)",real,triang,,0.18000000000000002,0.22000000000000003,false,Small Massives 5 2 Mb Rate,
+Coral,small_massives_5_2_dist_mean,6.165751937,"(5.549176743299999, 6.7823271307, 0.5)","(5.549176743299999, 6.7823271307, 0.5)",real,triang,,5.549176743299999,6.7823271307,false,Small Massives 5 2 Dist Mean,
+Coral,small_massives_5_2_dist_std,4.773419097,"(4.2960771873, 5.2507610067, 0.5)","(4.2960771873, 5.2507610067, 0.5)",real,triang,,4.2960771873,5.2507610067,false,Small Massives 5 2 Dist Std,
+Coral,small_massives_5_3_mean_colony_diameter_m,0.075,"(0.0675, 0.0825, 0.5)","(0.0675, 0.0825, 0.5)",real,triang,,0.0675,0.0825,false,Small Massives 5 3 Mean Colony Diameter M,
+Coral,small_massives_5_3_growth_rate,0.4,"(0.36000000000000004, 0.44000000000000006, 0.5)","(0.36000000000000004, 0.44000000000000006, 0.5)",real,triang,,0.36000000000000004,0.44000000000000006,false,Small Massives 5 3 Growth Rate,
+Coral,small_massives_5_3_fecundity,190543.02556977718,"(171488.72301279946, 209597.3281267549, 0.5)","(171488.72301279946, 209597.3281267549, 0.5)",real,triang,,171488.72301279946,209597.3281267549,false,Small Massives 5 3 Fecundity,
+Coral,small_massives_5_3_mb_rate,0.04,"(0.036000000000000004, 0.044000000000000004, 0.5)","(0.036000000000000004, 0.044000000000000004, 0.5)",real,triang,,0.036000000000000004,0.044000000000000004,false,Small Massives 5 3 Mb Rate,
+Coral,small_massives_5_3_dist_mean,6.165751937,"(5.549176743299999, 6.7823271307, 0.5)","(5.549176743299999, 6.7823271307, 0.5)",real,triang,,5.549176743299999,6.7823271307,false,Small Massives 5 3 Dist Mean,
+Coral,small_massives_5_3_dist_std,4.773419097,"(4.2960771873, 5.2507610067, 0.5)","(4.2960771873, 5.2507610067, 0.5)",real,triang,,4.2960771873,5.2507610067,false,Small Massives 5 3 Dist Std,
+Coral,small_massives_5_4_mean_colony_diameter_m,0.15,"(0.135, 0.165, 0.5)","(0.135, 0.165, 0.5)",real,triang,,0.135,0.165,false,Small Massives 5 4 Mean Colony Diameter M,
+Coral,small_massives_5_4_growth_rate,0.2,"(0.18000000000000002, 0.22000000000000003, 0.5)","(0.18000000000000002, 0.22000000000000003, 0.5)",real,triang,,0.18000000000000002,0.22000000000000003,false,Small Massives 5 4 Growth Rate,
+Coral,small_massives_5_4_fecundity,254932.76428211934,"(229439.48785390743, 280426.0407103313, 0.5)","(229439.48785390743, 280426.0407103313, 0.5)",real,triang,,229439.48785390743,280426.0407103313,false,Small Massives 5 4 Fecundity,
+Coral,small_massives_5_4_mb_rate,0.026,"(0.0234, 0.0286, 0.5)","(0.0234, 0.0286, 0.5)",real,triang,,0.0234,0.0286,false,Small Massives 5 4 Mb Rate,
+Coral,small_massives_5_4_dist_mean,6.165751937,"(5.549176743299999, 6.7823271307, 0.5)","(5.549176743299999, 6.7823271307, 0.5)",real,triang,,5.549176743299999,6.7823271307,false,Small Massives 5 4 Dist Mean,
+Coral,small_massives_5_4_dist_std,4.773419097,"(4.2960771873, 5.2507610067, 0.5)","(4.2960771873, 5.2507610067, 0.5)",real,triang,,4.2960771873,5.2507610067,false,Small Massives 5 4 Dist Std,
+Coral,small_massives_5_5_mean_colony_diameter_m,0.3,"(0.27, 0.33, 0.5)","(0.27, 0.33, 0.5)",real,triang,,0.27,0.33,false,Small Massives 5 5 Mean Colony Diameter M,
+Coral,small_massives_5_5_growth_rate,0.08,"(0.07200000000000001, 0.08800000000000001, 0.5)","(0.07200000000000001, 0.08800000000000001, 0.5)",real,triang,,0.07200000000000001,0.08800000000000001,false,Small Massives 5 5 Growth Rate,
+Coral,small_massives_5_5_fecundity,341081.56995084044,"(306973.4129557564, 375189.7269459245, 0.5)","(306973.4129557564, 375189.7269459245, 0.5)",real,triang,,306973.4129557564,375189.7269459245,false,Small Massives 5 5 Fecundity,
+Coral,small_massives_5_5_mb_rate,0.02,"(0.018000000000000002, 0.022000000000000002, 0.5)","(0.018000000000000002, 0.022000000000000002, 0.5)",real,triang,,0.018000000000000002,0.022000000000000002,false,Small Massives 5 5 Mb Rate,
+Coral,small_massives_5_5_dist_mean,6.165751937,"(5.549176743299999, 6.7823271307, 0.5)","(5.549176743299999, 6.7823271307, 0.5)",real,triang,,5.549176743299999,6.7823271307,false,Small Massives 5 5 Dist Mean,
+Coral,small_massives_5_5_dist_std,4.773419097,"(4.2960771873, 5.2507610067, 0.5)","(4.2960771873, 5.2507610067, 0.5)",real,triang,,4.2960771873,5.2507610067,false,Small Massives 5 5 Dist Std,
+Coral,small_massives_5_6_mean_colony_diameter_m,0.6,"(0.54, 0.66, 0.5)","(0.54, 0.66, 0.5)",real,triang,,0.54,0.66,false,Small Massives 5 6 Mean Colony Diameter M,
+Coral,small_massives_5_6_growth_rate,0.008,"(0.007200000000000001, 0.0088, 0.5)","(0.007200000000000001, 0.0088, 0.5)",real,triang,,0.007200000000000001,0.0088,false,Small Massives 5 6 Growth Rate,
+Coral,small_massives_5_6_fecundity,456342.4308669357,"(410708.1877802421, 501976.67395362933, 0.5)","(410708.1877802421, 501976.67395362933, 0.5)",real,triang,,410708.1877802421,501976.67395362933,false,Small Massives 5 6 Fecundity,
+Coral,small_massives_5_6_mb_rate,0.02,"(0.018000000000000002, 0.022000000000000002, 0.5)","(0.018000000000000002, 0.022000000000000002, 0.5)",real,triang,,0.018000000000000002,0.022000000000000002,false,Small Massives 5 6 Mb Rate,
+Coral,small_massives_5_6_dist_mean,6.165751937,"(5.549176743299999, 6.7823271307, 0.5)","(5.549176743299999, 6.7823271307, 0.5)",real,triang,,5.549176743299999,6.7823271307,false,Small Massives 5 6 Dist Mean,
+Coral,small_massives_5_6_dist_std,4.773419097,"(4.2960771873, 5.2507610067, 0.5)","(4.2960771873, 5.2507610067, 0.5)",real,triang,,4.2960771873,5.2507610067,false,Small Massives 5 6 Dist Std,
+Coral,large_massives_6_1_mean_colony_diameter_m,0.01,"(0.009000000000000001, 0.011000000000000001, 0.5)","(0.009000000000000001, 0.011000000000000001, 0.5)",real,triang,,0.009000000000000001,0.011000000000000001,false,Large Massives 6 1 Mean Colony Diameter M,
+Coral,large_massives_6_1_growth_rate,1.0,"(0.9, 1.1, 0.5)","(0.9, 1.1, 0.5)",real,triang,,0.9,1.1,false,Large Massives 6 1 Growth Rate,
+Coral,large_massives_6_1_fecundity,0.0,"(0.0, 0.0, 0.5)","(0.0, 0.0, 0.5)",real,triang,,0.0,0.0,true,Large Massives 6 1 Fecundity,
+Coral,large_massives_6_1_mb_rate,0.2,"(0.18000000000000002, 0.22000000000000003, 0.5)","(0.18000000000000002, 0.22000000000000003, 0.5)",real,triang,,0.18000000000000002,0.22000000000000003,false,Large Massives 6 1 Mb Rate,
+Coral,large_massives_6_1_dist_mean,7.153507902,"(6.438157111800001, 7.868858692200001, 0.5)","(6.438157111800001, 7.868858692200001, 0.5)",real,triang,,6.438157111800001,7.868858692200001,false,Large Massives 6 1 Dist Mean,
+Coral,large_massives_6_1_dist_std,5.538122776,"(4.9843104984, 6.0919350536, 0.5)","(4.9843104984, 6.0919350536, 0.5)",real,triang,,4.9843104984,6.0919350536,false,Large Massives 6 1 Dist Std,
+Coral,large_massives_6_2_mean_colony_diameter_m,0.035,"(0.03150000000000001, 0.038500000000000006, 0.5)","(0.03150000000000001, 0.038500000000000006, 0.5)",real,triang,,0.03150000000000001,0.038500000000000006,false,Large Massives 6 2 Mean Colony Diameter M,
+Coral,large_massives_6_2_growth_rate,0.6666666666666666,"(0.6, 0.7333333333333334, 0.5)","(0.6, 0.7333333333333334, 0.5)",real,triang,,0.6,0.7333333333333334,false,Large Massives 6 2 Growth Rate,
+Coral,large_massives_6_2_fecundity,0.0,"(0.0, 0.0, 0.5)","(0.0, 0.0, 0.5)",real,triang,,0.0,0.0,true,Large Massives 6 2 Fecundity,
+Coral,large_massives_6_2_mb_rate,0.2,"(0.18000000000000002, 0.22000000000000003, 0.5)","(0.18000000000000002, 0.22000000000000003, 0.5)",real,triang,,0.18000000000000002,0.22000000000000003,false,Large Massives 6 2 Mb Rate,
+Coral,large_massives_6_2_dist_mean,7.153507902,"(6.438157111800001, 7.868858692200001, 0.5)","(6.438157111800001, 7.868858692200001, 0.5)",real,triang,,6.438157111800001,7.868858692200001,false,Large Massives 6 2 Dist Mean,
+Coral,large_massives_6_2_dist_std,5.538122776,"(4.9843104984, 6.0919350536, 0.5)","(4.9843104984, 6.0919350536, 0.5)",real,triang,,4.9843104984,6.0919350536,false,Large Massives 6 2 Dist Std,
+Coral,large_massives_6_3_mean_colony_diameter_m,0.075,"(0.0675, 0.0825, 0.5)","(0.0675, 0.0825, 0.5)",real,triang,,0.0675,0.0825,false,Large Massives 6 3 Mean Colony Diameter M,
+Coral,large_massives_6_3_growth_rate,0.4,"(0.36000000000000004, 0.44000000000000006, 0.5)","(0.36000000000000004, 0.44000000000000006, 0.5)",real,triang,,0.36000000000000004,0.44000000000000006,false,Large Massives 6 3 Growth Rate,
+Coral,large_massives_6_3_fecundity,190543.02556977718,"(171488.72301279946, 209597.3281267549, 0.5)","(171488.72301279946, 209597.3281267549, 0.5)",real,triang,,171488.72301279946,209597.3281267549,false,Large Massives 6 3 Fecundity,
+Coral,large_massives_6_3_mb_rate,0.04,"(0.036000000000000004, 0.044000000000000004, 0.5)","(0.036000000000000004, 0.044000000000000004, 0.5)",real,triang,,0.036000000000000004,0.044000000000000004,false,Large Massives 6 3 Mb Rate,
+Coral,large_massives_6_3_dist_mean,7.153507902,"(6.438157111800001, 7.868858692200001, 0.5)","(6.438157111800001, 7.868858692200001, 0.5)",real,triang,,6.438157111800001,7.868858692200001,false,Large Massives 6 3 Dist Mean,
+Coral,large_massives_6_3_dist_std,5.538122776,"(4.9843104984, 6.0919350536, 0.5)","(4.9843104984, 6.0919350536, 0.5)",real,triang,,4.9843104984,6.0919350536,false,Large Massives 6 3 Dist Std,
+Coral,large_massives_6_4_mean_colony_diameter_m,0.15,"(0.135, 0.165, 0.5)","(0.135, 0.165, 0.5)",real,triang,,0.135,0.165,false,Large Massives 6 4 Mean Colony Diameter M,
+Coral,large_massives_6_4_growth_rate,0.2,"(0.18000000000000002, 0.22000000000000003, 0.5)","(0.18000000000000002, 0.22000000000000003, 0.5)",real,triang,,0.18000000000000002,0.22000000000000003,false,Large Massives 6 4 Growth Rate,
+Coral,large_massives_6_4_fecundity,254932.76428211934,"(229439.48785390743, 280426.0407103313, 0.5)","(229439.48785390743, 280426.0407103313, 0.5)",real,triang,,229439.48785390743,280426.0407103313,false,Large Massives 6 4 Fecundity,
+Coral,large_massives_6_4_mb_rate,0.026,"(0.0234, 0.0286, 0.5)","(0.0234, 0.0286, 0.5)",real,triang,,0.0234,0.0286,false,Large Massives 6 4 Mb Rate,
+Coral,large_massives_6_4_dist_mean,7.153507902,"(6.438157111800001, 7.868858692200001, 0.5)","(6.438157111800001, 7.868858692200001, 0.5)",real,triang,,6.438157111800001,7.868858692200001,false,Large Massives 6 4 Dist Mean,
+Coral,large_massives_6_4_dist_std,5.538122776,"(4.9843104984, 6.0919350536, 0.5)","(4.9843104984, 6.0919350536, 0.5)",real,triang,,4.9843104984,6.0919350536,false,Large Massives 6 4 Dist Std,
+Coral,large_massives_6_5_mean_colony_diameter_m,0.3,"(0.27, 0.33, 0.5)","(0.27, 0.33, 0.5)",real,triang,,0.27,0.33,false,Large Massives 6 5 Mean Colony Diameter M,
+Coral,large_massives_6_5_growth_rate,0.12,"(0.108, 0.132, 0.5)","(0.108, 0.132, 0.5)",real,triang,,0.108,0.132,false,Large Massives 6 5 Growth Rate,
+Coral,large_massives_6_5_fecundity,341081.56995084044,"(306973.4129557564, 375189.7269459245, 0.5)","(306973.4129557564, 375189.7269459245, 0.5)",real,triang,,306973.4129557564,375189.7269459245,false,Large Massives 6 5 Fecundity,
+Coral,large_massives_6_5_mb_rate,0.02,"(0.018000000000000002, 0.022000000000000002, 0.5)","(0.018000000000000002, 0.022000000000000002, 0.5)",real,triang,,0.018000000000000002,0.022000000000000002,false,Large Massives 6 5 Mb Rate,
+Coral,large_massives_6_5_dist_mean,7.153507902,"(6.438157111800001, 7.868858692200001, 0.5)","(6.438157111800001, 7.868858692200001, 0.5)",real,triang,,6.438157111800001,7.868858692200001,false,Large Massives 6 5 Dist Mean,
+Coral,large_massives_6_5_dist_std,5.538122776,"(4.9843104984, 6.0919350536, 0.5)","(4.9843104984, 6.0919350536, 0.5)",real,triang,,4.9843104984,6.0919350536,false,Large Massives 6 5 Dist Std,
+Coral,large_massives_6_6_mean_colony_diameter_m,0.6,"(0.54, 0.66, 0.5)","(0.54, 0.66, 0.5)",real,triang,,0.54,0.66,false,Large Massives 6 6 Mean Colony Diameter M,
+Coral,large_massives_6_6_growth_rate,0.012,"(0.0108, 0.013200000000000002, 0.5)","(0.0108, 0.013200000000000002, 0.5)",real,triang,,0.0108,0.013200000000000002,false,Large Massives 6 6 Growth Rate,
+Coral,large_massives_6_6_fecundity,456342.4308669357,"(410708.1877802421, 501976.67395362933, 0.5)","(410708.1877802421, 501976.67395362933, 0.5)",real,triang,,410708.1877802421,501976.67395362933,false,Large Massives 6 6 Fecundity,
+Coral,large_massives_6_6_mb_rate,0.02,"(0.018000000000000002, 0.022000000000000002, 0.5)","(0.018000000000000002, 0.022000000000000002, 0.5)",real,triang,,0.018000000000000002,0.022000000000000002,false,Large Massives 6 6 Mb Rate,
+Coral,large_massives_6_6_dist_mean,7.153507902,"(6.438157111800001, 7.868858692200001, 0.5)","(6.438157111800001, 7.868858692200001, 0.5)",real,triang,,6.438157111800001,7.868858692200001,false,Large Massives 6 6 Dist Mean,
+Coral,large_massives_6_6_dist_std,5.538122776,"(4.9843104984, 6.0919350536, 0.5)","(4.9843104984, 6.0919350536, 0.5)",real,triang,,4.9843104984,6.0919350536,false,Large Massives 6 6 Dist Std,

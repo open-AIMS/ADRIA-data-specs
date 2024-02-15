@@ -50,9 +50,8 @@ geopackage file must have the same name as the domain, etc.
 
 Connectivity data is represented as a transference probabilty matrix and is currently
 expected in CSV format, with source locations indicated by ROWS and sink locations indicated
-by COLUMNS. Each CSV file represents a given day of a year, with each sub-directory
-indicating the year. Due to the evolving data pipeline, the filenames are not expected to
-follow a specific convention.
+by COLUMNS. Each CSV file represents a given day and year. Due to the evolving data
+pipeline, the filenames are not expected to follow a specific convention.
 
 A future improvement is to store relevant metadata mapping filenames to their locations within the
 data package, their dimensions and format, and other ancillary information in the `datapackage.json`

@@ -19,11 +19,10 @@ ADRIA.
 
 ```
 Example_domain    # Unique name for Input Set / study domain
-├───connectivity  # (Sub-)directories holding CSVs of connectivity data (grouped by year)
-│   └───2000
+├───connectivity  # Holds CSVs of connectivity data (with year identifiers)
 ├───cyclones      # data cube as netCDF holding cyclone mortality data
 ├───DHWs          # netCDF-based data cubes holding DHW data (one for each RCP/SSP scenario)
-├───site_data     # Spatial data (currently a geopackage defining sites and a netCDF holding initial coral covers)
+├───spatial       # Spatial data (currently a geopackage defining sites and a netCDF holding initial coral covers)
 └───waves         # netCDF holding wave stress data
 datapackage.json
 README.md
@@ -32,8 +31,8 @@ README.md
 Dimensions of each data cube should follow the order of:
 
 - timesteps
-- locations
 - species
+- locations
 - scenarios
 
 Where a dimension is not relevant to a data cube, it should be removed.
@@ -66,7 +65,7 @@ Pertinent part of the datapackage spec is shown below (with comments):
 "name": "Example_domain",
   "title": "Example reef cluster data package",
   "description": "Example data package for ADRIA",
-  "version": "v0.2.1",                             // Used to ensure compatibility with current ADRIA version
+  "version": "v0.2.1",   // Used to ensure compatibility with current ADRIA version
   "sources": [],
   "simulation_metadata": {
     "timeframe": [2025, 2099]
@@ -94,7 +93,7 @@ Example_domain__RCPs45__2022-09-01_17_05_28_067
 │   ├───absolute_shelter_volume
 │   ├───relative_cover
 │   └───relative_shelter_volume
-└───site_data                     # Copy of geopackage representing study area/domain
+└───spatial                       # Copy of geopackage representing study area/domain
 ```
 
 

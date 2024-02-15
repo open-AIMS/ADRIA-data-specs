@@ -2,7 +2,7 @@
   "name": "Example_domain",
   "title": "Example reef cluster data package",
   "description": "Example data package for ADRIA",
-  "version": "0.4.0-rc",
+  "version": "0.6.0",
   "sources": [],
   "simulation_metadata": {
     "timeframe": [
@@ -22,7 +22,7 @@
     {
       "name": "spatial_data",
       "description": "Spatial data for Example cluster",
-      "path": "site_data/Example_domain.gpkg",
+      "path": "spatial/Example_domain.gpkg",
       "format": "geopackage"
     },
     {
@@ -32,7 +32,7 @@
         "reef_siteid",
         "covers"
       ],
-      "path": "site_data/coral_cover.nc",
+      "path": "spatial/coral_cover.nc",
       "format": "netCDF"
     },
     {

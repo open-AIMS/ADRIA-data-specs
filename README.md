@@ -72,7 +72,7 @@ Pertinent part of the datapackage spec is shown below (with comments):
 ```
 
 In `datapackage.json`, under `resources`, the details of the spatial .gpkg dataset must be listed, 
-including the reef identifier column (e.g. `UNIQUE_ID`, `reef_siteid`) as the first element of `data`:
+including the location-identifier column (e.g. `UNIQUE_ID`, `reef_siteid`) as the first element of `data`:
 
 ```json
 "resources": [

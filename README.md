@@ -35,6 +35,9 @@ Dimensions of each data cube should follow the order of:
 - locations
 - scenarios
 
+`species` dimension should include the six species groups used in ReefMod. Removal of arborescent acropora and distribution into size classes is performed
+within `ADRIA.load_domain()`.
+
 Where a dimension is not relevant to a data cube, it should be removed.
 For example, where `species` is not a relevant dimension, the data cube should follow the
 order of:

@@ -22,6 +22,9 @@
     {
       "name": "spatial_data",
       "description": "Spatial data for Example cluster",
+      "data": [
+        "reef_siteid"
+      ],
       "path": "spatial/Example_domain.gpkg",
       "format": "geopackage"
     },

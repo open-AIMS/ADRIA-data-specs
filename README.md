@@ -35,6 +35,9 @@ Dimensions of each data cube should follow the order of:
 - locations
 - scenarios
 
+`species` dimension should include the six species groups used in ReefMod. Removal of arborescent acropora and distribution into size classes is performed
+within `ADRIA.load_domain()`.
+
 Where a dimension is not relevant to a data cube, it should be removed.
 For example, where `species` is not a relevant dimension, the data cube should follow the
 order of:
@@ -71,6 +74,22 @@ Pertinent part of the datapackage spec is shown below (with comments):
   }
 ```
 
+In `datapackage.json`, under `resources`, the details of the spatial .gpkg dataset must be listed, 
+including the location-identifier column (e.g. `UNIQUE_ID`, `reef_siteid`) as the first element of `data`:
+
+```json
+"resources": [
+        {
+            "name": "spatial_data",
+            "description": "spatial data of domain. Unique reefs listed under UNIQUE_ID.",
+            "path": "spatial/reef_spatial_data.gpkg",
+            "data": [
+                "UNIQUE_ID"
+            ],
+            "format": "geopackage"
+        }
+]
+```
 
 # Result Set
 

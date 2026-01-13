@@ -1,0 +1,42 @@
+Metadata-Version: 2.4
+Name: validator
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: geopandas>=1.1.2
+Requires-Dist: h5netcdf>=1.7.3
+Requires-Dist: netcdf4>=1.7.4
+Requires-Dist: pandas>=2.3.3
+Requires-Dist: pydantic>=2.12.5
+Requires-Dist: xarray>=2025.12.0
+
+# ADRIA Domain Validator
+
+A CLI tool to validate ADRIA Domain Data Packages.
+
+## Prerequisites
+
+- [uv](https://github.com/astral-sh/uv) must be installed.
+
+## Usage
+
+Run the validator from this directory:
+
+```bash
+uv run src/main.py <path_to_domain_directory>
+```
+
+## Checks Performed
+
+1.  **Schema Validation**: Verifies `datapackage.json` against the expected Pydantic schema.
+2.  **Resource Existence**: Checks that all files listed in `resources` exist.
+3.  **Naming Conventions**: Ensures the spatial GeoPackage matches the domain name (e.g., `spatial/MyDomain.gpkg`).
+4.  **Directory Structure**: Checks for standard subdirectories (connectivity, cyclones, etc.).
+
+## Development
+
+Project is managed with `uv`.
+
+- Install dependencies: `uv sync`
+- Add dependencies: `uv add <package>`

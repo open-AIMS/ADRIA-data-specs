@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+src/main.py
+src/schemas.py
+src/utils.py
+src/validators.py
+src/validator.egg-info/PKG-INFO
+src/validator.egg-info/SOURCES.txt
+src/validator.egg-info/dependency_links.txt
+src/validator.egg-info/entry_points.txt
+src/validator.egg-info/requires.txt
+src/validator.egg-info/top_level.txt

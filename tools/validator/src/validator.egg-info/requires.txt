@@ -1,0 +1,6 @@
+geopandas>=1.1.2
+h5netcdf>=1.7.3
+netcdf4>=1.7.4
+pandas>=2.3.3
+pydantic>=2.12.5
+xarray>=2025.12.0
